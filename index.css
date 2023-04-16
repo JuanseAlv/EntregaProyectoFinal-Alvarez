@@ -376,7 +376,7 @@ legend {
     background-color: rgba(0, 100, 0, 0.534);
 }
 
-/* Diseño Contacto */
+/******* Diseño Contacto *******/
 
 .mainContacto {
     height: auto;
@@ -390,7 +390,11 @@ legend {
     letter-spacing: 7px;
     font-size: 45px;
 }
-
+.mainContacto h1::first-letter{
+    color: darkgreen;
+    font-size: 70px;
+    text-shadow: 2px 1px 0px black;
+}
 .mainContacto h2 {
     text-align: center;
     padding-top: 10px;
@@ -407,6 +411,7 @@ legend {
     color: white;
     letter-spacing: 2px;
     padding: 5px;
+    transition: all 0.15s;
 }
 
 .instagram {
@@ -427,17 +432,51 @@ legend {
     font-size: 25px;
     border-radius: 5px;
     border: 2px solid black;
+    transition: all 0.15s;
 }
 
 .mainContacto section {
     height: auto;
-    width: 420px;
+    width: 70%;
     margin: 0 auto;
     background-color: rgba(0, 100, 0, 0.356);
+    padding: 10px;
+    margin-top: 20px;
+}
+.formulario p, h3, ::placeholder {
+    color: black;
+}
+.formulario p{
+    margin-top: 10px;
+    /* text-shadow: 0.5px 0.5px 0px black; */
+}
+.formulario input{
+    margin-top: 10px;
+}
+.alert{
+    width: 50%;
+    margin: 0 auto;
+}
+.textoYBotones{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+textarea{
+    width: 450px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.textoYBotones input{
+    text-align: center;
+    margin-top: 20px;
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-
-/* Diseño General */
+/******** Diseño General *********/
 
 .headerGeneral {
     margin: 0;
