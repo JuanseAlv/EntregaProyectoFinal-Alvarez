@@ -467,6 +467,11 @@ textarea{
     margin: 0 auto;
     padding-bottom: 20px;
 }
+@media only screen and (max-width:680px){
+    textarea{
+        width: 80%;
+    }
+}
 .textoYBotones input{
     text-align: center;
     margin-top: 20px;
@@ -492,9 +497,7 @@ textarea{
 .logo img {
     height: 125px;
     width: 180px;
-
 }
-
 nav {
     width: 100%;
     text-align: center;
@@ -511,6 +514,15 @@ nav {
     background-color: rgba(255, 255, 255, 0.507);
     border-radius: 20%;
     transition: all 0.2s;
+}
+@media only screen and (max-width: 600px){
+    .barra a{
+        font-size: 15px;
+    }
+    .logo img {
+        height: 100px;
+        width: 150px;
+    }
 }
 
 .barra a:hover {
@@ -535,54 +547,68 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-footer {
+footer{
+    background-color:#2e475df3;;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+.contactoSocial{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 95px;
-    text-align: center;
-    padding: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
-    background-color: rgba(169, 169, 169, 0.788);
-
-}
-
-.redes i {
-    font-size: 30px;
-    letter-spacing: 20px;
-    color: rgb(69, 31, 238);
-}
-.redes .footerWhatsapp:hover{
-    color: #25D366;
-}
-.redes .footerInstagram:hover{
-    color: #f09433;
-}
-.redes .footerFacebook:hover{
-    color: #4267B2;
-}
-
-footer p {
+    width: 200px;
     margin: 0 auto;
-    font-size: 17px;
-    width: auto;
 }
-
-footer a {
-    color: rgb(69, 31, 238);
-    text-decoration: underline;
+.contactoSocial a{
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.15s;
 }
-
-footer h4 {
+.contactoSocial .wpp:hover{
+    background-color: #25D366;
+    transition: all 0.15s;
+}
+.contactoSocial .ig:hover{
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    transition: all 0.15s;
+}
+.contactoSocial .fb:hover{
+    background-color: #4267B2;
+    transition: 0.15s;
+}
+.contactoSocial li {
+    display: inline-block;
+}
+.nombre__copy {
+    text-align: center;
+}
+.nombre__copy h4{
     font-family: caveat;
     font-size: 40px;
-    color: darkgreen;
+    color: rgb(7, 194, 7);
+    width: auto;
 }
-
-footer h4::selection {
-    background-color: darkgreen;
-    color: white;
+.copyright ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+}
+.copyright{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
