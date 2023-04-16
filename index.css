@@ -17,7 +17,12 @@
     font-weight: 100;
     font-style: normal;
 }
-
+@font-face {
+    font-family: dongle;
+    src: url(./Font/Dongle-Regular.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
 /* Diseño Index */
 
 .headerIndex {
@@ -117,6 +122,7 @@
     font-size: 50px;
     letter-spacing: 15px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .mainInicio h1::first-letter {
@@ -126,13 +132,20 @@
 }
 
 .mainInicio section p {
+    padding: 7px;
+    height: auto;
+    width: 70%;
     background-color: rgba(0, 100, 0, 0.349);
-    border: 1px solid darkgreen;
-    font-size: 19px;
+    border-radius: 10%;
+    color: black;
+    font-family: dongle;
+    font-size: 30px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .mainInicio div video {
+    margin-top: 50px;
     padding-left: 20%;
 }
 
@@ -143,9 +156,6 @@
     height: auto;
     background-color: rgba(0, 100, 0, 0.274);
     text-align: center;
-}
-
-.mainEpuyen .parteArriba {
     margin: 0 auto;
 }
 
@@ -434,31 +444,39 @@ legend {
     padding: 0;
     height: 180px;
     width: auto;
-    border: none
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
     height: 125px;
     width: 180px;
+
 }
 
 nav {
+    width: 100%;
     background-color: rgba(11, 133, 58, 0.699);
     text-align: center;
-    word-spacing: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.493);
 }
 
 .barra a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     text-decoration: none;
-    color: green;
+    color: rgba(11, 133, 58, 0.986);
     background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 10%;
 }
 
 .barra a:hover {
     color: rgba(255, 255, 255, 0.507);
     background-color: rgba(11, 133, 58, 0.699);
-    ;
 }
 
 body {
@@ -487,7 +505,7 @@ footer {
     padding: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
-    background-color: rgba(169, 169, 169, 0.589);
+    background-color: rgba(169, 169, 169, 0.788);
 
 }
 
@@ -496,9 +514,14 @@ footer {
     letter-spacing: 20px;
     color: rgb(69, 31, 238);
 }
-
-footer div a i:hover {
-    color: white;
+.redes .footerWhatsapp:hover{
+    color: #25D366;
+}
+.redes .footerInstagram:hover{
+    color: #f09433;
+}
+.redes .footerFacebook:hover{
+    color: #4267B2;
 }
 
 footer p {
