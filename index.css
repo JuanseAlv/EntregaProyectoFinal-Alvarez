@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: handrawnLetter;
+    src: url(./Font/DeliciousHandrawn-Regular.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(./Font/Caveat-SemiBold.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Diseño Index */
+
+.headerIndex {
+    height: 30%;
+}
+
+
+.centro {
+    background-color: rgba(9, 170, 44, 0.349);
+    text-align: center;
+    padding-top: 40px;
+    height: 40%;
+}
+
+@media only screen and (max-height: 350px) {
+    .centro {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-height: 250px) {
+    .centro {
+        padding-top: 20px;
+    }
+}
+
+.iniciar {
+    font-family: handrawnLetter;
+    font-size: 80px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .iniciar {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .iniciar {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+    .iniciar {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-height: 250px) {
+    .iniciar {
+        font-size: 35px;
+    }
+}
+
+.centro h2 {
+    margin-top: 20px;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-height: 450px) {
+    .centro h2 {
+        font-size: 23px;
+        margin-top: 12px;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+    .centro h2 {
+        font-size: 17px;
+
+    }
+}
+
+@media only screen and (max-height: 250px) {
+    .centro h2 {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+}
+
+/* Diseño Inicio */
+
+.mainInicio {
+    min-height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainInicio h1 {
+    font-size: 50px;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+.mainInicio h1::first-letter {
+    color: darkgreen;
+    font-size: 70px;
+    text-shadow: 2px 1px 0px black;
+}
+
+.mainInicio section p {
+    background-color: rgba(0, 100, 0, 0.349);
+    border: 1px solid darkgreen;
+    font-size: 19px;
+    text-align: center;
+}
+
+.mainInicio div video {
+    padding-left: 20%;
+}
+
+/* Diseño Epuyen */
+
+.mainEpuyen .parteArriba {
+    width: 450px;
+    height: auto;
+    background-color: rgba(0, 100, 0, 0.274);
+    text-align: center;
+}
+
+.mainEpuyen .parteArriba {
+    margin: 0 auto;
+}
+
+.mainEpuyen .parteArriba h2 {
+    font-size: 30px;
+}
+
+.mainEpuyen .parteArriba p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.mainEpuyen section a {
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.mainEpuyen section a:hover {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.mainEpuyen article {
+    margin: 0 auto;
+    width: 770px;
+    height: 570px;
+    padding: 35px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+@media only screen and (max-width: 750px) {
+    .mainEpuyen article {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .mainEpuyen article {
+        width: 420px;
+        height: 370px;
+    }
+}
+
+.mainEpuyen article img {
+    width: 700px;
+    height: 500px;
+}
+
+@media only screen and (max-width: 750px) {
+    .mainEpuyen article img {
+        width: 600px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .mainEpuyen article img {
+        width: 420px;
+        height: 300px;
+    }
+}
+
+.mainEpuyen .epuyenTitulo,
+.epuyenTexto {
+    text-shadow: 2px 2px 2px black;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.mainEpuyen div {
+    text-align: center;
+}
+
+.mainEpuyen {
+    height: calc(100% - 180px);
+    width: 100%;
+    background-image: url(../Imagenes/epuyen3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoYMapa {
+    display: flex;
+    justify-content: center;
+}
+
+.parteAbajo {
+    height: 280px;
+    width: 400px;
+    margin-right: 100px;
+}
+
+.textoYMapa h2 {
+    background-color: rgba(0, 100, 0, 0.534);
+    width: 400px;
+    margin: 0 auto;
+}
+
+.textoYMapa p {
+    font-size: 22px;
+    color: black;
+    background-color: rgba(50, 205, 50, 0.171);
+    font-family: italic;
+}
+
+.mainEpuyen iframe {
+    width: 400px;
+    height: 280px;
+}
+
+/* Diseño sobreNosotros */
+
+.mainSobreNosotros {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 177, 61, 0.637);
+}
+
+.parte1 {
+    text-align: center;
+}
+
+.parte1 div {
+    display: flex;
+    justify-content: center;
+}
+
+.mainSobreNosotros h1 {
+    font-size: 50px;
+    word-spacing: 15px;
+    letter-spacing: 7px;
+}
+
+.mainSobreNosotros .puerto::first-letter {
+    color: darkgreen;
+    font-size: 70px;
+    text-shadow: 2px 1px 0px black;
+}
+
+.mainSobreNosotros .bonito::first-letter {
+    color: darkgreen;
+    font-size: 70px;
+    text-shadow: 2px 1px 0px black;
+}
+
+fieldset {
+    margin: 0 auto;
+    width: 700px;
+}
+
+legend {
+    font-size: 27px;
+}
+
+.parte1 p {
+    font-size: 19px;
+}
+
+.parte2 {
+    text-align: center;
+}
+
+.parte2 h2 {
+    font-size: 27px;
+}
+
+.parte2 img {
+    width: 180px;
+    height: 180px;
+}
+
+.parte2 hr {
+    margin: 0 auto;
+    width: 540px;
+}
+
+.parte2 p {
+    margin: 0 auto;
+    width: 540px;
+    font-size: 19px;
+}
+
+.parte3 {
+    text-align: center;
+}
+
+.parte3 h2 {
+    font-size: 27px;
+}
+
+.parte3 hr {
+    margin: 0 auto;
+    width: 540px;
+}
+
+.parte3 p {
+    margin: 0 auto;
+    width: 540px;
+    font-size: 19px;
+}
+
+.parte3 img {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.parte3 span {
+    background-color: rgba(0, 100, 0, 0.534);
+}
+
+/* Diseño Contacto */
+
+.mainContacto {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.mainContacto h1 {
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 7px;
+    font-size: 45px;
+}
+
+.mainContacto h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mainContacto div {
+    text-align: center;
+    word-spacing: 20px;
+}
+
+.mainContacto a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+.instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+.whatsapp{
+    background-color: #25D366;
+}
+.facebook{
+    background-color: #4267B2;
+}
+
+.mainContacto a:hover {
+    font-size: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.mainContacto section {
+    height: auto;
+    width: 420px;
+    margin: 0 auto;
+    background-color: rgba(0, 100, 0, 0.356);
+}
+
+
+/* Diseño General */
+
+.headerGeneral {
+    margin: 0;
+    padding: 0;
+    height: 180px;
+    width: auto;
+    border: none
+}
+
+.logo img {
+    height: 125px;
+    width: 180px;
+}
+
+nav {
+    background-color: rgba(11, 133, 58, 0.699);
+    text-align: center;
+    word-spacing: 70px;
+}
+
+.barra a {
+    font-size: 20px;
+    text-decoration: none;
+    color: green;
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.barra a:hover {
+    color: rgba(255, 255, 255, 0.507);
+    background-color: rgba(11, 133, 58, 0.699);
+    ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/fondoIndex.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.bodyIndex {
+    height: 100vh;
+    background-image: url(img/fondoIndex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 95px;
+    text-align: center;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    background-color: rgba(169, 169, 169, 0.589);
+
+}
+
+.redes i {
+    font-size: 30px;
+    letter-spacing: 20px;
+    color: rgb(69, 31, 238);
+}
+
+footer div a i:hover {
+    color: white;
+}
+
+footer p {
+    margin: 0 auto;
+    font-size: 17px;
+    width: auto;
+}
+
+footer a {
+    color: rgb(69, 31, 238);
+    text-decoration: underline;
+}
+
+footer h4 {
+    font-family: caveat;
+    font-size: 40px;
+    color: darkgreen;
+}
+
+footer h4::selection {
+    background-color: darkgreen;
+    color: white;
+}
