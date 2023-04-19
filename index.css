@@ -110,7 +110,7 @@
     }
 }
 
-/* Diseño Inicio */
+/******** Diseño Inicio ********/
 
 .mainInicio {
     min-height: auto;
@@ -123,6 +123,12 @@
     letter-spacing: 15px;
     text-align: center;
     margin-bottom: 50px;
+}
+@media only screen and (max-width:600px) {
+    .mainInicio h1{
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
 }
 
 .mainInicio h1::first-letter {
@@ -149,41 +155,92 @@
     padding-left: 20%;
 }
 
-/* Diseño Epuyen */
-
-.mainEpuyen .parteArriba {
-    width: 450px;
+/********* Diseño Epuyen **********/
+.mainEpuyen {
     height: auto;
-    background-color: rgba(0, 100, 0, 0.274);
+    width: 100%;
+    background-image: url(../Imagenes/epuyen3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainEpuyen div {
     text-align: center;
-    margin: 0 auto;
 }
-
-.mainEpuyen .parteArriba h2 {
+.barra1, .barra2, .barra3{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.507);
+    text-align: center;
+}
+.barra1, .barra2, .barra3 h2{
+    color: rgba(3, 39, 17, 0.986);
+    padding: 12px;
     font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+}
+@media only screen and (max-width:550px) {
+    .barra1, .barra2, .barra3 h2{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+}
+.parteArriba{
+    display: flex;
+    width: 100%;
+    height: 350px;
+}
+@media only screen and (max-width:720px) {
+    .parteArriba{
+        height: 400px;
+    }
 }
 
-.mainEpuyen .parteArriba p {
+.parteArriba .imagenEpuyen{
+    background-image: url(img/fotoEpuyen.jpg);
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.parteArriba .descEpuyen{
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+}
+
+.parteArriba .descEpuyen h2 {
+    color: black;
+    background-color: rgba(0, 100, 0, 0.534);
+    padding: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width:800px) {
+    .descEpuyen h2{
+        font-size: 23px;
+    }
+}
+
+.parteArriba .descEpuyen p {
+    padding: 7px;
     font-size: 18px;
     font-style: italic;
-}
-
-.mainEpuyen section a {
     color: black;
-    padding: 3px;
-    text-decoration: none;
-    font-size: 18px;
-    background-color: white;
-    border: 1px solid black;
+    background-color: rgba(50, 205, 50, 0.418);
 }
-
-.mainEpuyen section a:hover {
-    color: white;
-    font-size: 20px;
-    background-color: black;
-    border: 1px solid white;
+@media only screen and (max-width:625px) {
+    .parteArriba .descEpuyen p{
+        font-size: 17.5px;
+        padding: 6px;
+    }
 }
-
+@media only screen and (max-width:605px) {
+    .parteArriba .descEpuyen p{
+        font-size: 15.8px;
+        padding: 5px;
+    }
+}
 .mainEpuyen article {
     margin: 0 auto;
     width: 770px;
@@ -233,49 +290,77 @@
     font-size: 20px;
 }
 
-.mainEpuyen div {
-    text-align: center;
-}
-
-.mainEpuyen {
-    height: calc(100% - 180px);
-    width: 100%;
-    background-image: url(../Imagenes/epuyen3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .textoYMapa {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
 }
 
 .parteAbajo {
-    height: 280px;
-    width: 400px;
-    margin-right: 100px;
+    height: 100%;
+    width: 100%;
+    padding: 17px;
 }
 
 .textoYMapa h2 {
+    color: black;
     background-color: rgba(0, 100, 0, 0.534);
-    width: 400px;
-    margin: 0 auto;
+    padding: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media only screen and (max-width:800px) {
+    .textoYMapa h2{
+        font-size: 23px;
+    }
 }
 
 .textoYMapa p {
+    padding: 10px;
     font-size: 22px;
     color: black;
     background-color: rgba(50, 205, 50, 0.171);
     font-family: italic;
 }
-
+@media only screen and (max-width:770px) {
+    .textoYMapa p{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .textoYMapa p{
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .textoYMapa p{
+        padding: 10px;
+        font-size: 16.5px;
+    }
+}
+.parteAbajo a{
+    color: rgba(3, 39, 17, 0.986);
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.parteAbajo a:hover{
+    font-size: 20px;
+    background-color: rgba(194, 212, 201, 0.699);
+    border: 1px solid white;
+}
 .mainEpuyen iframe {
-    width: 400px;
-    height: 280px;
+    width: 100%;
+    height: 300px;
 }
 
-/* Diseño sobreNosotros */
+
+/********* Diseño sobreNosotros *********/
 
 .mainSobreNosotros {
     height: 100%;
@@ -297,6 +382,12 @@
     word-spacing: 15px;
     letter-spacing: 7px;
 }
+@media only screen and (max-width:600px) {
+    .mainSobreNosotros h1{
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+}
 
 .mainSobreNosotros .puerto::first-letter {
     color: darkgreen;
@@ -312,7 +403,13 @@
 
 fieldset {
     margin: 0 auto;
-    width: 700px;
+    width: 100%;
+    padding: 10px;
+}
+@media only screen and (min-width:800px) {
+    fieldset{
+        width: 700px;
+    }
 }
 
 legend {
@@ -321,30 +418,98 @@ legend {
 
 .parte1 p {
     font-size: 19px;
+    color: black;
 }
 
-.parte2 {
+.alquiler{
     text-align: center;
 }
-
-.parte2 h2 {
-    font-size: 27px;
-}
-
-.parte2 img {
-    width: 180px;
-    height: 180px;
-}
-
-.parte2 hr {
-    margin: 0 auto;
-    width: 540px;
-}
-
-.parte2 p {
-    margin: 0 auto;
-    width: 540px;
+.alquiler p{
+    color: black;
     font-size: 19px;
+}
+.parte2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.card{
+    height: auto;
+    width: 30%;    
+    border: 3px solid black;
+    box-shadow: 2px 2px 5px black;
+    filter: grayscale(70%);
+}
+@media only screen and (min-width:900px) {
+    .card{
+        width:220px
+    }
+    .parte2{
+        justify-content: space-around;
+    }
+    .alquiler {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .parte3 p{
+        width: 600px;
+    }
+}
+.card1{
+    background-color: rgba(255, 127, 80, 0.534);
+}
+.card2{
+    background-color: rgba(0, 0, 255, 0.37);
+}
+.card3{
+    background-color: rgba(137, 43, 226, 0.486);
+}
+.card:hover{
+    transform: scale(1.09);
+    transition: all 0.5s;
+    text-decoration: none;
+    filter: grayscale(0%);
+}
+.card_img{
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card1 .card_img{
+    background-image: url(img/alquiler1.jpg);
+}
+.card2 .card_img{
+    background-image: url(img/alquiler2.jpg);
+}
+.card3 .card_img{
+    background-image: url(img/alquiler3.jpg);
+}
+
+.card_desc h4{
+    letter-spacing: 0.2px;
+    padding-top: 2px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px 0px black;
+}
+
+.card_desc p{
+    padding: 15px;
+    font-family: cursive;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    text-shadow: 0.2px 0.2px 0px black;
+}
+@media only screen and (max-width:570px) {
+    .card_desc p{
+        font-size: 13px;
+        padding: 10px;
+    }
 }
 
 .parte3 {
@@ -355,14 +520,10 @@ legend {
     font-size: 27px;
 }
 
-.parte3 hr {
-    margin: 0 auto;
-    width: 540px;
-}
 
 .parte3 p {
+    color: black;
     margin: 0 auto;
-    width: 540px;
     font-size: 19px;
 }
 
@@ -370,6 +531,11 @@ legend {
     margin: 0 auto;
     width: 80%;
     margin-bottom: 50px;
+    margin-top: 30px;
+}
+.parte3 img:hover{
+    transform: scale(1.09);
+    transition: all 0.2s;
 }
 
 .parte3 span {
@@ -397,7 +563,14 @@ legend {
 }
 .mainContacto h2 {
     text-align: center;
-    padding-top: 10px;
+    padding: 20px;
+    color: black;
+    margin: 0 auto;
+}
+@media only screen and (min-width:900px) {
+    .mainContacto h2 {
+        width: 700px;
+    }
 }
 
 .mainContacto div {
