@@ -29,26 +29,12 @@
     height: 30%;
 }
 
-
 .centro {
     background-color: rgba(9, 170, 44, 0.349);
     text-align: center;
     padding-top: 40px;
     height: 40%;
 }
-
-@media only screen and (max-height: 350px) {
-    .centro {
-        padding-top: 30px;
-    }
-}
-
-@media only screen and (max-height: 250px) {
-    .centro {
-        padding-top: 20px;
-    }
-}
-
 .iniciar {
     font-family: handrawnLetter;
     font-size: 80px;
@@ -57,58 +43,74 @@
     letter-spacing: 10px;
 
 }
-
-@media only screen and (max-width: 600px) {
-    .iniciar {
-        font-size: 60px;
-    }
-}
-
-@media only screen and (max-height: 450px) {
-    .iniciar {
-        font-size: 55px;
-    }
-}
-
-@media only screen and (max-height: 350px) {
-    .iniciar {
-        font-size: 45px;
-    }
-}
-
-@media only screen and (max-height: 250px) {
-    .iniciar {
-        font-size: 35px;
-    }
-}
-
 .centro h2 {
     margin-top: 20px;
     font-size: 27px;
     color: white;
     text-align: center;
 }
-
 @media only screen and (max-height: 450px) {
+    .iniciar {
+        font-size: 55px;
+    }
     .centro h2 {
         font-size: 23px;
         margin-top: 12px;
     }
 }
-
 @media only screen and (max-height: 350px) {
+    .centro {
+        padding-top: 22px;
+    }
+    .iniciar {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
     .centro h2 {
         font-size: 17px;
-
+        margin-top: 10px;
     }
 }
-
 @media only screen and (max-height: 250px) {
+    .centro {
+        padding-top: 20px;
+    }
+    .iniciar {
+        font-size: 35px;
+    }
     .centro h2 {
         font-size: 13px;
         margin-top: 5px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .iniciar {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 250px) {
+    .iniciar {
+        font-size: 20px;
+    }
+    .centro h2 {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 154px) {
+    .iniciar {
+        font-size: 10px;
+    }
+    .centro h2 {
+        font-size: 7px;
+        margin-top: 4px;
+    }
+    .centro{
+        height: 30%;
+    }
+}
+
 
 /******** Diseño Inicio ********/
 
