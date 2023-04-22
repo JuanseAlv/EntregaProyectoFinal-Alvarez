@@ -34,6 +34,10 @@
     text-align: center;
     padding-top: 40px;
     height: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 40%);
+    grid-gap: 5px
 }
 .iniciar {
     font-family: handrawnLetter;
@@ -49,13 +53,20 @@
     color: white;
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+    .iniciar {
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+}
+
 @media only screen and (max-height: 450px) {
     .iniciar {
         font-size: 55px;
     }
     .centro h2 {
         font-size: 23px;
-        margin-top: 12px;
+        margin-top: 20px;
     }
 }
 @media only screen and (max-height: 350px) {
@@ -68,7 +79,7 @@
     }
     .centro h2 {
         font-size: 17px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 @media only screen and (max-height: 250px) {
@@ -76,26 +87,25 @@
         padding-top: 20px;
     }
     .iniciar {
-        font-size: 35px;
+        font-size: 30px;
     }
     .centro h2 {
-        font-size: 13px;
-        margin-top: 5px;
+        font-size: 9px;
+        margin-top: 15px;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .iniciar {
-        font-size: 30px;
-    }
-}
-@media only screen and (max-width: 250px) {
+@media only screen and (max-width: 300px) {
     .iniciar {
         font-size: 20px;
     }
     .centro h2 {
-        font-size: 10px;
+        font-size: 9px;
         margin-top: 5px;
+    }
+    .centro{
+        height: 25%;
+        padding-top: 17px;
     }
 }
 @media only screen and (max-width: 154px) {
@@ -103,16 +113,16 @@
         font-size: 10px;
     }
     .centro h2 {
-        font-size: 7px;
-        margin-top: 4px;
+        font-size: 6px;
+        margin-top: 0px;
     }
     .centro{
-        height: 30%;
+        height: 25%;
     }
 }
 
 
-/******** Diseño Inicio ********/
+/******** Diseño Principal ********/
 
 .mainInicio {
     min-height: auto;
@@ -175,40 +185,56 @@
     background-color: rgba(255, 255, 255, 0.507);
     text-align: center;
 }
-.barra1, .barra2, .barra3 h2{
+.barra1 h2, .barra2 h2, .barra3 h2{
     color: rgba(3, 39, 17, 0.986);
     padding: 12px;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 3px;
 }
-@media only screen and (max-width:550px) {
-    .barra1, .barra2, .barra3 h2{
+@media only screen and (max-width:595px) {
+    .barra1 h2, .barra2 h2, .barra3 h2{
         font-size: 25px;
         letter-spacing: 1px;
     }
+    .barra1, .barra2, .barra3{
+        height: 50px;
+    }
 }
+@media only screen and (max-width:380px) {
+    .barra1 h2, .barra2 h2, .barra3 h2{
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    .barra1, .barra2, .barra3{
+        height: 40px;
+    }
+}
+
 .parteArriba{
     display: flex;
     width: 100%;
     height: 350px;
 }
+
 @media only screen and (max-width:720px) {
     .parteArriba{
-        height: 400px;
+        flex-direction: column;
+        height: 800px;
     }
 }
 
+
 .parteArriba .imagenEpuyen{
     background-image: url(img/fotoEpuyen.jpg);
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
 }
 .parteArriba .descEpuyen{
     height: 100%;
-    width: 50%;
+    width: 100%;
     padding: 10px;
 }
 
@@ -245,45 +271,38 @@
 }
 .mainEpuyen article {
     margin: 0 auto;
-    width: 770px;
-    height: 570px;
+    width: 70%;
+    height: 500px;
     padding: 35px;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.445);
 }
+.mainEpuyen article img {
+    margin: 0 auto;
+    width: 60%;
+    height: 430px;
+}
 
 @media only screen and (max-width: 750px) {
     .mainEpuyen article {
-        width: 600px;
         height: 400px;
     }
-}
-
-@media only screen and (max-width: 550px) {
-    .mainEpuyen article {
-        width: 420px;
-        height: 370px;
-    }
-}
-
-.mainEpuyen article img {
-    width: 700px;
-    height: 500px;
-}
-
-@media only screen and (max-width: 750px) {
     .mainEpuyen article img {
-        width: 600px;
         height: 330px;
     }
 }
 
 @media only screen and (max-width: 550px) {
+    .mainEpuyen article {
+        width: 100%;
+        height: 370px;
+    }
     .mainEpuyen article img {
-        width: 420px;
+        width: 100%;
         height: 300px;
     }
 }
+
 
 .mainEpuyen .epuyenTitulo,
 .epuyenTexto {
@@ -298,7 +317,12 @@
     width: 100%;
     height: auto;
 }
-
+@media only screen and (max-width:720px) {
+    .textoYMapa{
+        flex-direction: column;
+        height: 700px;
+    }
+}
 .parteAbajo {
     height: 100%;
     width: 100%;
@@ -672,6 +696,9 @@ textarea{
 .logo img {
     height: 125px;
     width: 180px;
+}
+.logo img:hover{
+    transform: scale(1.09);
 }
 nav {
     width: 100%;
