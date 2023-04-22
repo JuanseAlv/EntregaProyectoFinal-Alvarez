@@ -94,7 +94,11 @@
         margin-top: 15px;
     }
 }
-
+@media only screen and (max-width: 385px) {
+    .iniciar{
+        font-size: 40px;
+    }
+}
 @media only screen and (max-width: 300px) {
     .iniciar {
         font-size: 20px;
