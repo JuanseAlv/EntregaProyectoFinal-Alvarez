@@ -29,26 +29,16 @@
     height: 30%;
 }
 
-
 .centro {
     background-color: rgba(9, 170, 44, 0.349);
     text-align: center;
     padding-top: 40px;
     height: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 40%);
+    grid-gap: 5px
 }
-
-@media only screen and (max-height: 350px) {
-    .centro {
-        padding-top: 30px;
-    }
-}
-
-@media only screen and (max-height: 250px) {
-    .centro {
-        padding-top: 20px;
-    }
-}
-
 .iniciar {
     font-family: handrawnLetter;
     font-size: 80px;
@@ -57,10 +47,16 @@
     letter-spacing: 10px;
 
 }
-
+.centro h2 {
+    margin-top: 20px;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
 @media only screen and (max-width: 600px) {
     .iniciar {
         font-size: 60px;
+        letter-spacing: 5px;
     }
 }
 
@@ -68,49 +64,73 @@
     .iniciar {
         font-size: 55px;
     }
-}
-
-@media only screen and (max-height: 350px) {
-    .iniciar {
-        font-size: 45px;
-    }
-}
-
-@media only screen and (max-height: 250px) {
-    .iniciar {
-        font-size: 35px;
-    }
-}
-
-.centro h2 {
-    margin-top: 20px;
-    font-size: 27px;
-    color: white;
-    text-align: center;
-}
-
-@media only screen and (max-height: 450px) {
     .centro h2 {
         font-size: 23px;
-        margin-top: 12px;
+        margin-top: 20px;
     }
 }
-
 @media only screen and (max-height: 350px) {
+    .centro {
+        padding-top: 22px;
+    }
+    .iniciar {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
     .centro h2 {
         font-size: 17px;
-
+        margin-top: 20px;
     }
 }
-
 @media only screen and (max-height: 250px) {
+    .centro {
+        padding-top: 20px;
+    }
+    .iniciar {
+        font-size: 30px;
+        letter-spacing: 0px;
+    }
     .centro h2 {
-        font-size: 13px;
+        font-size: 9px;
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width: 385px) {
+    .iniciar{
+        font-size: 37px;
+        letter-spacing: 0px;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .iniciar {
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    .centro h2 {
+        font-size: 9px;
         margin-top: 5px;
     }
+    .centro{
+        height: 25%;
+        padding-top: 17px;
+    }
+}
+@media only screen and (max-width: 154px) {
+    .iniciar {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    .centro h2 {
+        font-size: 6px;
+        margin-top: 0px;
+    }
+    .centro{
+        height: 25%;
+    }
 }
 
-/******** Diseño Inicio ********/
+
+/******** Diseño Principal ********/
 
 .mainInicio {
     min-height: auto;
@@ -173,40 +193,56 @@
     background-color: rgba(255, 255, 255, 0.507);
     text-align: center;
 }
-.barra1, .barra2, .barra3 h2{
+.barra1 h2, .barra2 h2, .barra3 h2{
     color: rgba(3, 39, 17, 0.986);
     padding: 12px;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 3px;
 }
-@media only screen and (max-width:550px) {
-    .barra1, .barra2, .barra3 h2{
+@media only screen and (max-width:595px) {
+    .barra1 h2, .barra2 h2, .barra3 h2{
         font-size: 25px;
         letter-spacing: 1px;
     }
+    .barra1, .barra2, .barra3{
+        height: 50px;
+    }
 }
+@media only screen and (max-width:380px) {
+    .barra1 h2, .barra2 h2, .barra3 h2{
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    .barra1, .barra2, .barra3{
+        height: 40px;
+    }
+}
+
 .parteArriba{
     display: flex;
     width: 100%;
     height: 350px;
 }
+
 @media only screen and (max-width:720px) {
     .parteArriba{
-        height: 400px;
+        flex-direction: column;
+        height: 800px;
     }
 }
 
+
 .parteArriba .imagenEpuyen{
     background-image: url(img/fotoEpuyen.jpg);
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
 }
 .parteArriba .descEpuyen{
     height: 100%;
-    width: 50%;
+    width: 100%;
     padding: 10px;
 }
 
@@ -243,45 +279,38 @@
 }
 .mainEpuyen article {
     margin: 0 auto;
-    width: 770px;
-    height: 570px;
+    width: 70%;
+    height: 500px;
     padding: 35px;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.445);
 }
+.mainEpuyen article img {
+    margin: 0 auto;
+    width: 60%;
+    height: 430px;
+}
 
 @media only screen and (max-width: 750px) {
     .mainEpuyen article {
-        width: 600px;
         height: 400px;
     }
-}
-
-@media only screen and (max-width: 550px) {
-    .mainEpuyen article {
-        width: 420px;
-        height: 370px;
-    }
-}
-
-.mainEpuyen article img {
-    width: 700px;
-    height: 500px;
-}
-
-@media only screen and (max-width: 750px) {
     .mainEpuyen article img {
-        width: 600px;
         height: 330px;
     }
 }
 
 @media only screen and (max-width: 550px) {
+    .mainEpuyen article {
+        width: 100%;
+        height: 370px;
+    }
     .mainEpuyen article img {
-        width: 420px;
+        width: 100%;
         height: 300px;
     }
 }
+
 
 .mainEpuyen .epuyenTitulo,
 .epuyenTexto {
@@ -296,7 +325,12 @@
     width: 100%;
     height: auto;
 }
-
+@media only screen and (max-width:720px) {
+    .textoYMapa{
+        flex-direction: column;
+        height: 700px;
+    }
+}
 .parteAbajo {
     height: 100%;
     width: 100%;
@@ -671,6 +705,9 @@ textarea{
     height: 125px;
     width: 180px;
 }
+.logo img:hover{
+    transform: scale(1.09);
+}
 nav {
     width: 100%;
     text-align: center;
@@ -776,6 +813,58 @@ footer{
     text-align: center;
     list-style: none;
     margin: 0 auto;
+}
+@media only screen and (max-width:450px) {
+    .copyright ul{
+        width: 100%;
+        font-size: 11px;
+    }
+    .mainInicio h1{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .barra a{
+        font-size: 10px;
+    }
+    .logo img {
+        height: 73px;
+        width: 105px;
+    }
+    .mainInicio section p{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:270px) {
+    .copyright ul{
+        width: 100%;
+        font-size: 9px;
+    }
+    .mainInicio h1{
+        font-size: 21px;
+        letter-spacing: 0px;
+    }
+    .barra a{
+        font-size: 7px;
+        padding: 2px;
+    }
+    .logo img {
+        height: 60px;
+        width: 80px;
+    }
+    .mainInicio section p{
+        font-size: 21px;
+    }
+    .contactoSocial{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .contactoSocial a{
+        font-size: 25px;
+        padding: 5px
+    }
+    .nombre__copy h4{
+        font-size: 30px;
+    }
 }
 .copyright{
     margin: 0;
