@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 70%;
+}
+@media only screen and (min-width:600px){
+    html{
+        font-size: 100%;
+    }
+}
 
 @font-face {
     font-family: handrawnLetter;
@@ -23,7 +31,7 @@
     font-weight: 100;
     font-style: normal;
 }
-/* Diseño Index */
+/************ Diseño Index ***********/
 
 .headerIndex {
     height: 30%;
@@ -41,11 +49,15 @@
 }
 .iniciar {
     font-family: handrawnLetter;
-    font-size: 80px;
+    font-size: 4.8rem;
     color: white;
     text-decoration: none;
     letter-spacing: 10px;
-
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: 5s;
 }
 .centro h2 {
     margin-top: 20px;
@@ -55,30 +67,19 @@
 }
 @media only screen and (max-width: 600px) {
     .iniciar {
-        font-size: 60px;
-        letter-spacing: 5px;
+        letter-spacing: 1px;
     }
 }
-
 @media only screen and (max-height: 450px) {
-    .iniciar {
-        font-size: 55px;
-    }
-    .centro h2 {
-        font-size: 23px;
-        margin-top: 20px;
-    }
-}
-@media only screen and (max-height: 350px) {
     .centro {
         padding-top: 22px;
     }
     .iniciar {
-        font-size: 45px;
-        letter-spacing: 3px;
+        font-size: 3.5rem;
+        letter-spacing: 1px;
     }
     .centro h2 {
-        font-size: 17px;
+        font-size: 1rem;
         margin-top: 20px;
     }
 }
@@ -87,48 +88,48 @@
         padding-top: 20px;
     }
     .iniciar {
-        font-size: 30px;
+        font-size: 2.5rem;
         letter-spacing: 0px;
     }
     .centro h2 {
-        font-size: 9px;
+        font-size: 0.7rem;
         margin-top: 15px;
     }
 }
-@media only screen and (max-width: 385px) {
+@media only screen and (max-width: 345px) {
     .iniciar{
-        font-size: 37px;
-        letter-spacing: 0px;
-    }
-}
-@media only screen and (max-width: 300px) {
-    .iniciar {
-        font-size: 20px;
+        font-size: 2.7rem;
         letter-spacing: 0px;
     }
     .centro h2 {
-        font-size: 9px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .centro{
+        height: 28%;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 230px) {
+    .iniciar {
+        font-size: 2rem;
+    }
+    .centro h2 {
+        font-size: 0.8rem;
         margin-top: 5px;
     }
     .centro{
-        height: 25%;
-        padding-top: 17px;
+        height: 20%;
     }
 }
-@media only screen and (max-width: 154px) {
-    .iniciar {
-        font-size: 10px;
-        letter-spacing: 0px;
+@keyframes aparecer{
+    0%{
+        opacity: 0;
     }
-    .centro h2 {
-        font-size: 6px;
-        margin-top: 0px;
-    }
-    .centro{
-        height: 25%;
+    100%{
+        opacity: 1;
     }
 }
-
 
 /******** Diseño Principal ********/
 
@@ -139,21 +140,21 @@
 }
 
 .mainInicio h1 {
-    font-size: 50px;
+    font-size: 3.1rem;
     letter-spacing: 15px;
     text-align: center;
     margin-bottom: 50px;
 }
 @media only screen and (max-width:600px) {
     .mainInicio h1{
-        font-size: 40px;
+        /* font-size: 40px; */
         letter-spacing: 10px;
     }
 }
 
 .mainInicio h1::first-letter {
     color: darkgreen;
-    font-size: 70px;
+    font-size: 4.3rem;
     text-shadow: 2px 1px 0px black;
 }
 
@@ -165,7 +166,7 @@
     border-radius: 10%;
     color: black;
     font-family: dongle;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -196,22 +197,22 @@
 .barra1 h2, .barra2 h2, .barra3 h2{
     color: rgba(3, 39, 17, 0.986);
     padding: 12px;
-    font-size: 30px;
+    font-size: 1.9rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
-@media only screen and (max-width:595px) {
+@media only screen and (max-width:455px) {
     .barra1 h2, .barra2 h2, .barra3 h2{
-        font-size: 25px;
+        font-size: 1.5rem;
         letter-spacing: 1px;
     }
     .barra1, .barra2, .barra3{
-        height: 50px;
+        height: 45px;
     }
 }
-@media only screen and (max-width:380px) {
+@media only screen and (max-width:330px) {
     .barra1 h2, .barra2 h2, .barra3 h2{
-        font-size: 18px;
+        font-size: 1.2rem;
         letter-spacing: 0px;
     }
     .barra1, .barra2, .barra3{
@@ -222,13 +223,13 @@
 .parteArriba{
     display: flex;
     width: 100%;
-    height: 350px;
+    height: auto;
 }
 
 @media only screen and (max-width:720px) {
     .parteArriba{
         flex-direction: column;
-        height: 800px;
+        height: auto;
     }
 }
 
@@ -236,12 +237,12 @@
 .parteArriba .imagenEpuyen{
     background-image: url(img/fotoEpuyen.jpg);
     width: 100%;
-    height: 100%;
+    height: 330px;
     background-position: center;
     background-size: cover;
 }
 .parteArriba .descEpuyen{
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 10px;
 }
@@ -254,29 +255,24 @@
 }
 @media only screen and (max-width:800px) {
     .descEpuyen h2{
-        font-size: 23px;
+        font-size: 1.5rem;
     }
 }
 
 .parteArriba .descEpuyen p {
     padding: 7px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-style: italic;
     color: black;
     background-color: rgba(50, 205, 50, 0.418);
 }
-@media only screen and (max-width:625px) {
+@media only screen and (max-width:600px) {
     .parteArriba .descEpuyen p{
-        font-size: 17.5px;
+        font-size: 1.56rem;
         padding: 6px;
     }
 }
-@media only screen and (max-width:605px) {
-    .parteArriba .descEpuyen p{
-        font-size: 15.8px;
-        padding: 5px;
-    }
-}
+
 .mainEpuyen article {
     margin: 0 auto;
     width: 70%;
@@ -316,7 +312,7 @@
 .epuyenTexto {
     text-shadow: 2px 2px 2px black;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .textoYMapa {
@@ -328,7 +324,7 @@
 @media only screen and (max-width:720px) {
     .textoYMapa{
         flex-direction: column;
-        height: 700px;
+        height: auto;
     }
 }
 .parteAbajo {
@@ -345,46 +341,27 @@
 }
 @media only screen and (max-width:800px) {
     .textoYMapa h2{
-        font-size: 23px;
+        font-size: 1.44rem;
     }
 }
 
 .textoYMapa p {
     padding: 10px;
-    font-size: 22px;
+    font-size: 1.56rem;
     color: black;
     background-color: rgba(50, 205, 50, 0.171);
     font-family: italic;
-}
-@media only screen and (max-width:770px) {
-    .textoYMapa p{
-        padding: 10px;
-        font-size: 20px;
-    }
-}
-@media only screen and (max-width:650px) {
-    .textoYMapa p{
-        padding: 10px;
-        font-size: 18px;
-    }
-}
-@media only screen and (max-width:500px) {
-    .textoYMapa p{
-        padding: 10px;
-        font-size: 16.5px;
-    }
 }
 .parteAbajo a{
     color: rgba(3, 39, 17, 0.986);
     background-color: rgba(255, 255, 255, 0.774);
     padding: 5px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     border-radius: 20%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .parteAbajo a:hover{
-    font-size: 20px;
     background-color: rgba(194, 212, 201, 0.699);
     border: 1px solid white;
 }
@@ -412,26 +389,35 @@
 }
 
 .mainSobreNosotros h1 {
-    font-size: 50px;
+    font-size: 3.12rem;
     word-spacing: 15px;
     letter-spacing: 7px;
+    margin-bottom: 60px;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:450px) {
     .mainSobreNosotros h1{
-        font-size: 40px;
-        letter-spacing: 6px;
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        word-spacing: 10px;
+    }
+}
+@media only screen and (max-width:320px) {
+    .mainSobreNosotros h1{
+        font-size: 2.1rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
     }
 }
 
 .mainSobreNosotros .puerto::first-letter {
     color: darkgreen;
-    font-size: 70px;
+    font-size: 4rem;
     text-shadow: 2px 1px 0px black;
 }
 
 .mainSobreNosotros .bonito::first-letter {
     color: darkgreen;
-    font-size: 70px;
+    font-size: 4rem;
     text-shadow: 2px 1px 0px black;
 }
 
@@ -447,11 +433,11 @@ fieldset {
 }
 
 legend {
-    font-size: 27px;
+    font-size: 2rem;
 }
 
 .parte1 p {
-    font-size: 19px;
+    font-size: 1.3rem;
     color: black;
 }
 
@@ -460,13 +446,15 @@ legend {
 }
 .alquiler p{
     color: black;
-    font-size: 19px;
+    font-size: 1.3rem;
+    padding: 15px;
 }
 .parte2 {
     display: flex;
     justify-content: space-between;
     padding: 30px;
 }
+
 
 .card{
     height: auto;
@@ -523,42 +511,56 @@ legend {
 
 .card_desc h4{
     letter-spacing: 0.2px;
-    padding-top: 2px;
+    padding-top: 4px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: 28px;
+    font-size: 1.8rem;
     text-shadow: 2px 2px 0px black;
 }
 
 .card_desc p{
     padding: 15px;
     font-family: cursive;
-    font-size: 15px;
+    font-size: 1.1rem;
     color: black;
     text-align: center;
     text-shadow: 0.2px 0.2px 0px black;
 }
-@media only screen and (max-width:570px) {
+@media only screen and (max-width:500px) {
+    .parte2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .card_img{
+        height: 250px;
+    }
+}
+/* @media only screen and (max-width:570px) {
     .card_desc p{
         font-size: 13px;
         padding: 10px;
     }
-}
+} */
 
 .parte3 {
     text-align: center;
 }
 
 .parte3 h2 {
-    font-size: 27px;
+    font-size: 2rem;
 }
 
 
 .parte3 p {
     color: black;
     margin: 0 auto;
-    font-size: 19px;
+    font-size: 1.3rem;
+    padding: 15px;
 }
 
 .parte3 img {
@@ -588,11 +590,12 @@ legend {
     text-align: center;
     padding-top: 20px;
     letter-spacing: 7px;
-    font-size: 45px;
+    font-size: 2.8rem;
+    color: black;
 }
 .mainContacto h1::first-letter{
     color: darkgreen;
-    font-size: 70px;
+    font-size: 4.3rem;
     text-shadow: 2px 1px 0px black;
 }
 .mainContacto h2 {
@@ -600,6 +603,7 @@ legend {
     padding: 20px;
     color: black;
     margin: 0 auto;
+    font-size: 2rem;
 }
 @media only screen and (min-width:900px) {
     .mainContacto h2 {
@@ -607,18 +611,36 @@ legend {
     }
 }
 
-.mainContacto div {
+.mainContacto .btn-redes {
     text-align: center;
     word-spacing: 20px;
 }
 
 .mainContacto a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     letter-spacing: 2px;
     padding: 5px;
     transition: all 0.15s;
+}
+@media only screen and (max-width:325px) {
+    .btn-redes{
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+        margin: 0 auto;
+    }
+    .btn-redes a{
+        margin-bottom: 15px;
+    }
+    .mainContacto h1{
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+    .mainContacto h1::first-letter{
+        font-size: 3.8rem;
+    }
 }
 
 .instagram {
@@ -636,9 +658,9 @@ legend {
 }
 
 .mainContacto a:hover {
-    font-size: 25px;
+    font-size: 1.56rem;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid white;
     transition: all 0.15s;
 }
 
@@ -655,7 +677,6 @@ legend {
 }
 .formulario p{
     margin-top: 10px;
-    /* text-shadow: 0.5px 0.5px 0px black; */
 }
 .formulario input{
     margin-top: 10px;
@@ -678,6 +699,9 @@ textarea{
     textarea{
         width: 80%;
     }
+    .formulario input{
+        width: 80%;
+    }
 }
 .textoYBotones input{
     text-align: center;
@@ -686,6 +710,9 @@ textarea{
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+#alerta{
+    padding: 3px;
 }
 
 /******** Diseño General *********/
@@ -718,7 +745,7 @@ nav {
 .barra a {
     padding: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
     color: rgba(3, 39, 17, 0.986);
     background-color: rgba(255, 255, 255, 0.507);
@@ -726,9 +753,6 @@ nav {
     transition: all 0.2s;
 }
 @media only screen and (max-width: 600px){
-    .barra a{
-        font-size: 15px;
-    }
     .logo img {
         height: 100px;
         width: 150px;
@@ -772,7 +796,7 @@ footer{
 .contactoSocial a{
     text-decoration: none;
     color: white;
-    font-size: 32px;
+    font-size: 2.1rem;
     padding: 8px;
     border-radius: 50%;
     transition: all 0.15s;
@@ -801,7 +825,7 @@ footer{
 }
 .nombre__copy h4{
     font-family: caveat;
-    font-size: 40px;
+    font-size: 2.6rem;
     color: rgb(7, 194, 7);
     width: auto;
 }
@@ -817,34 +841,31 @@ footer{
 @media only screen and (max-width:450px) {
     .copyright ul{
         width: 100%;
-        font-size: 11px;
+        font-size: 1rem;
     }
     .mainInicio h1{
-        font-size: 30px;
+        font-size: 2.6rem;
         letter-spacing: 1px;
     }
     .barra a{
-        font-size: 10px;
+        font-size: 1rem;
     }
     .logo img {
         height: 73px;
         width: 105px;
     }
-    .mainInicio section p{
-        font-size: 25px;
-    }
 }
-@media only screen and (max-width:270px) {
+@media only screen and (max-width:272px) {
     .copyright ul{
         width: 100%;
-        font-size: 9px;
+        font-size: 0.8rem;
     }
     .mainInicio h1{
-        font-size: 21px;
+        font-size: 1.87rem;
         letter-spacing: 0px;
     }
     .barra a{
-        font-size: 7px;
+        font-size: 0.62rem;
         padding: 2px;
     }
     .logo img {
@@ -852,18 +873,18 @@ footer{
         width: 80px;
     }
     .mainInicio section p{
-        font-size: 21px;
+        font-size: 1.87rem;
     }
     .contactoSocial{
         width: 100%;
         justify-content: space-around;
     }
     .contactoSocial a{
-        font-size: 25px;
+        font-size: 2.2rem;
         padding: 5px
     }
     .nombre__copy h4{
-        font-size: 30px;
+        font-size: 2.67rem;
     }
 }
 .copyright{
