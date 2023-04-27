@@ -1,0 +1,38 @@
+.mainInicio {
+    min-height: auto;
+    width: 100%;
+    margin: 0 auto;
+    h1 {
+        font-size: 3.1rem;
+        letter-spacing: 15px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+        ::first-letter {
+        color: darkgreen;
+        font-size: 4.3rem;
+        text-shadow: 2px 1px 0px black;
+        }
+    p {
+        padding: 7px;
+        height: auto;
+        width: 70%;
+        background-color: rgba(0, 100, 0, 0.349);
+        border-radius: 10%;
+        color: black;
+        font-family: dongle;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    video {
+        margin-top: 50px;
+        padding-left: 20%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .mainInicio h1{
+        letter-spacing: 10px;
+    }
+}

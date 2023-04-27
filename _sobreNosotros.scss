@@ -1,0 +1,188 @@
+.mainSobreNosotros {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 177, 61, 0.637);
+    h1 {
+        font-size: 3.12rem;
+        word-spacing: 15px;
+        letter-spacing: 7px;
+        margin-bottom: 60px;
+    }
+    .puerto::first-letter {
+        color: darkgreen;
+        font-size: 4rem;
+        text-shadow: 2px 1px 0px black;
+    }
+    .bonito::first-letter {
+        color: darkgreen;
+        font-size: 4rem;
+        text-shadow: 2px 1px 0px black;
+    }
+}
+
+.parte1 {
+    text-align: center;
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        font-size: 1.3rem;
+        color: black;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .mainSobreNosotros h1{
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        word-spacing: 10px;
+    }
+}
+@media only screen and (max-width:320px) {
+    .mainSobreNosotros h1{
+        font-size: 2.1rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+    }
+}
+
+fieldset {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+}
+@media only screen and (min-width:800px) {
+    fieldset{
+        width: 700px;
+    }
+}
+
+legend {
+    font-size: 2rem;
+}
+
+.alquiler{
+    text-align: center;
+    p{
+        color: black;
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+}
+.parte2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    .card{
+        height: auto;
+        width: 30%;    
+        border: 3px solid black;
+        box-shadow: 2px 2px 5px black;
+        filter: grayscale(70%);
+        .card_img{
+            height: 180px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .card_desc{
+            h4{
+                letter-spacing: 0.2px;
+                padding-top: 4px;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                font-size: 1.8rem;
+                text-shadow: 2px 2px 0px black;
+            }
+            p{
+                padding: 15px;
+                font-family: cursive;
+                font-size: 1.1rem;
+                color: black;
+                text-align: center;
+                text-shadow: 0.2px 0.2px 0px black;
+            }
+        }
+    }
+    .card:hover{
+            transform: scale(1.09);
+            transition: all 0.5s;
+            text-decoration: none;
+            filter: grayscale(0%);
+    }
+    .card1{
+        background-color: rgba(255, 127, 80, 0.534);
+        .card_img{
+            background-image: url(img/alquiler1.jpg);
+        }
+    }
+    .card2{
+        background-color: rgba(0, 0, 255, 0.37);
+        .card_img{
+            background-image: url(img/alquiler2.jpg);
+        }
+    }
+    .card3{
+        background-color: rgba(137, 43, 226, 0.486);
+        .card_img{
+            background-image: url(img/alquiler3.jpg);
+        }
+    }
+    
+}
+@media only screen and (min-width:900px) {
+    .card{
+        width:220px
+    }
+    .parte2{
+        justify-content: space-around;
+    }
+    .alquiler {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .parte3 p{
+        width: 600px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .parte2{
+        flex-direction: column;
+        align-items: center;
+        .card{
+            width: 70%;
+            margin-bottom: 20px;
+        }
+        .card_img{
+            height: 250px;
+        }
+    }
+}
+
+.parte3 {
+    text-align: center;
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        color: black;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+    img {
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    img:hover{
+        transform: scale(1.09);
+        transition: all 0.2s;
+    }
+    span {
+        background-color: rgba(0, 100, 0, 0.534);
+    }
+}
