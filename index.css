@@ -720,50 +720,18 @@ textarea{
 .headerGeneral {
     margin: 0;
     padding: 0;
-    height: 180px;
+    height: auto;
     width: auto;
     border: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.logo img {
-    height: 125px;
-    width: 180px;
-}
-.logo img:hover{
-    transform: scale(1.09);
-}
 nav {
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-}
-
-.barra a {
-    padding: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: rgba(3, 39, 17, 0.986);
-    background-color: rgba(255, 255, 255, 0.507);
-    border-radius: 20%;
-    transition: all 0.2s;
-}
-@media only screen and (max-width: 600px){
-    .logo img {
-        height: 100px;
-        width: 150px;
-    }
-}
-
-.barra a:hover {
-    color: rgba(3, 39, 17, 0.986);
-    background-color: rgba(194, 212, 201, 0.699);
-    transform: scale(1.09);
-    transition: all 0.2s;
 }
 
 body {
@@ -847,13 +815,6 @@ footer{
         font-size: 2.6rem;
         letter-spacing: 1px;
     }
-    .barra a{
-        font-size: 1rem;
-    }
-    .logo img {
-        height: 73px;
-        width: 105px;
-    }
 }
 @media only screen and (max-width:272px) {
     .copyright ul{
@@ -863,14 +824,6 @@ footer{
     .mainInicio h1{
         font-size: 1.87rem;
         letter-spacing: 0px;
-    }
-    .barra a{
-        font-size: 0.62rem;
-        padding: 2px;
-    }
-    .logo img {
-        height: 60px;
-        width: 80px;
     }
     .mainInicio section p{
         font-size: 1.87rem;
@@ -894,4 +847,91 @@ footer{
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+}
+
+/****** Nuevo nav  ******/
+
+.navbar-brand img{
+    height: 110px;
+    width: 150px;
+}
+.navbar-brand img:hover{
+    transform: scale(1.09);
+}
+.navbar-brand span{
+    height: 30px;
+    width: 30px;
+}
+.collapse {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collapse a {
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgba(5, 65, 28, 0.986);
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 20%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    padding: 80px;
+}
+.nav-item:hover{
+    transform: scale(1.09);
+    transition: all 0.2s;
+}
+@media only screen and (max-width:992px) {
+    .nav-item{
+        padding: 5px;
+    }
+}
+:root {
+    --color-green:rgba(5, 65, 28, 0.986);
+    --color-red: rgba(255, 255, 255, 0.507);
+    --color-button: #fdffff;
+    --color-black: #0c0b0b;
+}
+.switch-button {
+    display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 4rem;
+    height: 2rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2rem);
+}
+@media only screen and (min-width:992px){
+    .switch-button{
+        visibility: hidden;
+    }
 }
