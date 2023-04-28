@@ -1,136 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
 .mainContacto {
     height: auto;
     width: 100%;
     text-align: center;
-    h1 {
-        text-align: center;
-        padding-top: 20px;
-        letter-spacing: 7px;
-        font-size: 2.8rem;
-        color: black;
-    }
-    h1::first-letter{
-        color: darkgreen;
-        font-size: 4.3rem;
-        text-shadow: 2px 1px 0px black;
-    }
-    h2 {
-        text-align: center;
-        padding: 20px;
-        color: black;
-        margin: 0 auto;
-        font-size: 2rem;
-    }
-    .btn-redes {
-        text-align: center;
-        word-spacing: 20px;
-    }
-    a {
-        text-decoration: none;
-        font-size: 1.25rem;
-        color: white;
-        letter-spacing: 2px;
-        padding: 5px;
-        transition: all 0.15s;
-    }
-    section {
+    font-family: 'Noto Sans', sans-serif;
+
+    .contact_form {
+        width: 600px;
         height: auto;
-        width: 70%;
-        margin: 0 auto;
-        background-color: rgba(0, 100, 0, 0.356);
-        padding: 10px;
-        margin-top: 20px;
-    }
-    a:hover {
-        font-size: 1.56rem;
-        border-radius: 5px;
-        border: 2px solid white;
-        transition: all 0.15s;
-    }
-}
+        margin: 10px auto;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background-color: $color2;
+        box-shadow: 5px 5px 5px $color1;
 
-@media only screen and (min-width:900px) {
-    .mainContacto h2 {
-        width: 700px;
-    }
-}
+        .formulario {
+            h1 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 3rem;
+                text-align: center;
+                padding-bottom: 20px;
+                color: $color1;
+                letter-spacing: 1px;
+            }
 
-@media only screen and (max-width:325px) {
-    .btn-redes{
-        display: flex;
-        flex-direction: column;
-        width: 90px;
-        margin: 0 auto;
-        a{
-            margin-bottom: 15px;
+            h3 {
+                font-size: 1.1rem;
+                padding-bottom: 30px;
+                color: #0e0e0e;
+            }
+
+            p {
+                font-size: 0.9rem;
+                color: #0e0e0e;
+            }
+
+            input:focus {
+                outline: 0;
+                border: 1px solid #14b853;
+            }
+
+            textarea:focus {
+                outline: 0;
+                border: 1px solid #14b853;
+            }
+
+            label {
+                display: block;
+                float: center;
+            }
+
+            input {
+                background-color: #fbfbfb;
+                width: 408px;
+                height: 40px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: white;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                background-color: #fbfbfb;
+                width: 405px;
+                height: 150px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: white;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+                padding-top: 15px;
+            }
+
+            button {
+                height: 45px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 10px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                text-transform: uppercase;
+                background-color: $color1;
+                border-color: $color1;
+                border-style: solid;
+                border-radius: 10px;
+                width: 420px;
+                cursor: pointer;
+
+                p {
+                    color: white;
+                }
+            }
+
+            span {
+                color: #14b853;
+            }
+
+            .aviso {
+                font-size: 0.8rem;
+                color: #0e0e0e;
+            }
+
+            ::-webkit-input-placeholder {
+                color: #a8a8a8;
+            }
+
+            ::-webkit-textarea-placeholder {
+                color: #a8a8a8;
+            }
+            .asunto{
+                width: 405px;
+                height: 40px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: white;
+                padding-left: 10px;
+            }
+            .asunto:focus{
+                outline: 0;
+                border: 1px solid #14b853;
+            }
         }
     }
-    .mainContacto {
-        h1{
-        font-size: 2.3rem;
-        letter-spacing: 2px;
+}
+@media only screen and (max-width:600px){
+    .mainContacto{
+        .contact_form {
+            width: 100%;
+            .formulario{
+                h1{
+                    font-size: 4rem;
+                }
+                h3{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+                .aviso{
+                    font-size: 1.1rem;
+                }
+                input{
+                    width: 70%;
+                }
+                textarea{
+                    width: 70%;
+                }
+                button{
+                    width: 70%;
+                }
+                .asunto{
+                    width: 70%;
+                }
+            }
         }
-        h1::first-letter{
-            font-size: 3.8rem;
-        }
     }
-}
-
-.instagram {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-}
-.whatsapp{
-    background-color: #25D366;
-}
-.facebook{
-    background-color: #4267B2;
-}
-
-.formulario {
-    p{
-    margin-top: 10px;
-    }
-    input{
-        margin-top: 10px;
-    }
-    p, h3, ::placeholder {
-        color: black;
-    }
-}
-.alert{
-    width: 50%;
-    margin: 0 auto;
-}
-.textoYBotones{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    input{
-        text-align: center;
-        margin-top: 20px;
-        width: 90px;
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-textarea{
-    width: 450px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-@media only screen and (max-width:680px){
-    textarea{
-        width: 80%;
-    }
-    .formulario input{
-        width: 80%;
-    }
-}
-#alerta{
-    padding: 3px;
 }

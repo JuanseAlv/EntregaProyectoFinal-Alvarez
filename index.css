@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 * {
   margin: 0;
   padding: 0;
@@ -363,7 +364,7 @@ footer {
   text-align: center;
   margin-bottom: 50px;
 }
-.mainInicio ::first-letter {
+.mainInicio h1::first-letter {
   color: darkgreen;
   font-size: 4.3rem;
   text-shadow: 2px 1px 0px black;
@@ -763,136 +764,143 @@ legend {
   height: auto;
   width: 100%;
   text-align: center;
+  font-family: "Noto Sans", sans-serif;
 }
-.mainContacto h1 {
-  text-align: center;
-  padding-top: 20px;
-  letter-spacing: 7px;
-  font-size: 2.8rem;
-  color: black;
-}
-.mainContacto h1::first-letter {
-  color: darkgreen;
-  font-size: 4.3rem;
-  text-shadow: 2px 1px 0px black;
-}
-.mainContacto h2 {
-  text-align: center;
-  padding: 20px;
-  color: black;
-  margin: 0 auto;
-  font-size: 2rem;
-}
-.mainContacto .btn-redes {
-  text-align: center;
-  word-spacing: 20px;
-}
-.mainContacto a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  color: white;
-  letter-spacing: 2px;
-  padding: 5px;
-  transition: all 0.15s;
-}
-.mainContacto section {
+.mainContacto .contact_form {
+  width: 600px;
   height: auto;
-  width: 70%;
-  margin: 0 auto;
-  background-color: rgba(0, 100, 0, 0.356);
-  padding: 10px;
-  margin-top: 20px;
-}
-.mainContacto a:hover {
-  font-size: 1.56rem;
-  border-radius: 5px;
-  border: 2px solid white;
-  transition: all 0.15s;
-}
-
-@media only screen and (min-width: 900px) {
-  .mainContacto h2 {
-    width: 700px;
-  }
-}
-@media only screen and (max-width: 325px) {
-  .btn-redes {
-    display: flex;
-    flex-direction: column;
-    width: 90px;
-    margin: 0 auto;
-  }
-  .btn-redes a {
-    margin-bottom: 15px;
-  }
-  .mainContacto h1 {
-    font-size: 2.3rem;
-    letter-spacing: 2px;
-  }
-  .mainContacto h1::first-letter {
-    font-size: 3.8rem;
-  }
-}
-.instagram {
-  background: #f09433;
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f09433", endColorstr="#bc1888", GradientType=1);
-}
-
-.whatsapp {
-  background-color: #25D366;
-}
-
-.facebook {
-  background-color: #4267B2;
-}
-
-.formulario p {
-  margin-top: 10px;
-}
-.formulario input {
-  margin-top: 10px;
-}
-.formulario ::-moz-placeholder {
-  color: black;
-}
-.formulario p, .formulario h3, .formulario ::placeholder {
-  color: black;
-}
-
-.alert {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.textoYBotones {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.textoYBotones input {
-  text-align: center;
-  margin-top: 20px;
-  width: 90px;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-textarea {
-  width: 450px;
-  margin: 0 auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding-top: 30px;
   padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.664);
+  box-shadow: 5px 5px 5px rgba(3, 39, 17, 0.986);
+}
+.mainContacto .contact_form .formulario h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgba(3, 39, 17, 0.986);
+  letter-spacing: 1px;
+}
+.mainContacto .contact_form .formulario h3 {
+  font-size: 1.1rem;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+.mainContacto .contact_form .formulario p {
+  font-size: 0.9rem;
+  color: #0e0e0e;
+}
+.mainContacto .contact_form .formulario input:focus {
+  outline: 0;
+  border: 1px solid #14b853;
+}
+.mainContacto .contact_form .formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #14b853;
+}
+.mainContacto .contact_form .formulario label {
+  display: block;
+  float: center;
+}
+.mainContacto .contact_form .formulario input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.mainContacto .contact_form .formulario textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.mainContacto .contact_form .formulario button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: rgba(3, 39, 17, 0.986);
+  border-color: rgba(3, 39, 17, 0.986);
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+.mainContacto .contact_form .formulario button p {
+  color: white;
+}
+.mainContacto .contact_form .formulario span {
+  color: #14b853;
+}
+.mainContacto .contact_form .formulario .aviso {
+  font-size: 0.8rem;
+  color: #0e0e0e;
+}
+.mainContacto .contact_form .formulario ::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.mainContacto .contact_form .formulario ::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+.mainContacto .contact_form .formulario .asunto {
+  width: 405px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding-left: 10px;
+}
+.mainContacto .contact_form .formulario .asunto:focus {
+  outline: 0;
+  border: 1px solid #14b853;
 }
 
-@media only screen and (max-width: 680px) {
-  textarea {
-    width: 80%;
+@media only screen and (max-width: 600px) {
+  .mainContacto .contact_form {
+    width: 100%;
   }
-  .formulario input {
-    width: 80%;
+  .mainContacto .contact_form .formulario h1 {
+    font-size: 4rem;
   }
-}
-#alerta {
-  padding: 3px;
+  .mainContacto .contact_form .formulario h3 {
+    font-size: 1.5rem;
+  }
+  .mainContacto .contact_form .formulario p {
+    font-size: 1.2rem;
+  }
+  .mainContacto .contact_form .formulario .aviso {
+    font-size: 1.1rem;
+  }
+  .mainContacto .contact_form .formulario input {
+    width: 70%;
+  }
+  .mainContacto .contact_form .formulario textarea {
+    width: 70%;
+  }
+  .mainContacto .contact_form .formulario button {
+    width: 70%;
+  }
+  .mainContacto .contact_form .formulario .asunto {
+    width: 70%;
+  }
 }/*# sourceMappingURL=index.css.map */

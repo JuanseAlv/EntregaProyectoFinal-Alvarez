@@ -22,16 +22,16 @@
                 <img src="../img/logoNuevo.png" alt="">
             </a>
             <div class="switch-button ">
-            
-                <input type="checkbox" name="switch-button" id="switch-label" data-toggle="collapse"  data-target="#navbarNav" class="switch-button__checkbox ">
-                
+
+                <input type="checkbox" name="switch-button" id="switch-label" data-toggle="collapse"
+                    data-target="#navbarNav" class="switch-button__checkbox ">
+
                 <label for="switch-label" class="switch-button__label"></label>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a  
-                        href="./epuyen.html">Epuyén</a>
+                        <a href="./epuyen.html">Epuyén</a>
                     </li>
                     <li class="nav-item">
                         <a href="./sobreNosotros.html">Nosotros</a>
@@ -46,38 +46,67 @@
     <hr>
 
     <main class="mainContacto">
-        <h1>ESCRIBINOS</h1>
-        <h2>Ponete en contacto para cualquier tipo de consultas mediante la plataforma que más te guste</h2>
-        <div class="btn-redes"><a href="https://www.instagram.com/kayak.puertobonitoepuyen/"
-                class="instagram">Instagram</a>
-            <a href="https://web.whatsapp.com/" class="whatsapp">WhatsApp</a>
-            <a href="https://www.facebook.com/KayakPuertoBonito/" class="facebook">Facebook</a></div>
-        <section class="formulario">
-            <h3>O si preferís escribirnos desde acá, por qué no?</h3>
-            <p><strong>Nombre y Apellido</strong></p>
-            <form action="">
-                <input type="text" placeholder="Escribí tu nombre" required>
-                <input type="text" placeholder="Acá tu apellido" required>
 
-                <p><strong>Tu contacto también</strong></p>
-                <input type="email" placeholder="Email" required>
-                <input type="number" placeholder="Tu número">
+        <div class="contact_form">
 
-                <p><strong>Decinos resumidamente la principal razón de la consulta</strong>
+            <div class="formulario">
+                <h1>Escribinos!</h1>
+                <h3>Ponete en contacto con nosotros, te respondemos a la brevedad</h3>
+                <form action="submeter-formulario.php" method="post">
                     <p>
-                        <input type="text" placeholder="Razón principal">
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                            placeholder="Escribe tu nombre">
+                    </p>
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio"
+                            placeholder="Escribe tu Email">
+                    </p>
 
-                        <p><strong>Ahora si, lo que quieras consultar</strong></p>
-                        <div class="textoYBotones"><textarea name="Consulta" id="" cols="50" rows="10"
-                                placeholder="Escibí tu consulta..." required></textarea>
+                    <p>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>
 
-                            <input type="reset" value="Borrar todo">
-                            <input type="submit" value="Confirmar"></div>
-                        <div class="alert alert-success" role="alert" id="alerta">
-                            Te respondemos a la brevedad!
-                        </div>
-            </form>
-        </section>
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <select class="asunto">
+                            <option selected>Elige tipo de asunto</option>
+                            <option value="1">Alquiler</option>
+                            <option value="2">Excursión</option>
+                            <option value="3">Otro asunto</option>
+                        </select>
+                        <!-- <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                            placeholder="Escribe un asunto"> -->
+                    </p>
+
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                            placeholder="Dejanos tu mensaje..."></textarea>
+                    </p>
+
+                    <button type="submit" name="enviar_formulario" id="enviar">
+                        <p>Enviar</p>
+                    </button>
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+
+                </form>
+            </div>
+        </div>
         <br> <br>
     </main>
     <hr>
@@ -124,6 +153,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
     </script>
+    
 </body>
 
 </html>
