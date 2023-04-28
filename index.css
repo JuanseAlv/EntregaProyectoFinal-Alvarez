@@ -388,7 +388,13 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .mainInicio h1 {
-    letter-spacing: 10px;
+    letter-spacing: 5px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .mainInicio h1 {
+    letter-spacing: 1px;
+    font-size: 2.3rem;
   }
 }
 .mainEpuyen {
@@ -869,6 +875,9 @@ legend {
   border-width: 1px;
   border-color: white;
   padding-left: 10px;
+}
+.mainContacto .contact_form .formulario .asunto option {
+  color: #0e0e0e;
 }
 .mainContacto .contact_form .formulario .asunto:focus {
   outline: 0;
