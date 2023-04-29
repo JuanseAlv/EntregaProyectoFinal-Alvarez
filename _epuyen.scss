@@ -31,6 +31,13 @@
     height: 60px;
     background-color: rgba(255, 255, 255, 0.507);
     text-align: center;
+    h1{
+        color: rgba(3, 39, 17, 0.986);
+        padding: 12px;
+        font-size: 1.9rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+    }
     h2{
         color: rgba(3, 39, 17, 0.986);
         padding: 12px;
@@ -97,44 +104,60 @@
 }
 
 @media only screen and (max-width:800px) {
-    .descEpuyen h2{
+    .descEpuyen {
+        h2{
         font-size: 1.5rem;
+        }
     }
 }
 
 @media only screen and (max-width:600px) {
-    .parteArriba .descEpuyen p{
-        font-size: 1.56rem;
-        padding: 6px;
+    .parteArriba {
+        .descEpuyen {
+            p{
+                font-size: 1.56rem;
+                padding: 6px;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .mainEpuyen article {
-        height: 400px;
-        img {
-            height: 330px;
+    .mainEpuyen {
+        article {
+            height: 400px;
+            img {
+                height: 330px;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .mainEpuyen article {
-        width: 100%;
-        height: 370px;
-        img {
+    .mainEpuyen {
+        article {
             width: 100%;
-            height: 300px;
+            height: 370px;
+            img {
+                width: 100%;
+                height: 300px;
+            }
         }
     }
 }
 
-
-.mainEpuyen .epuyenTitulo,
-.epuyenTexto {
-    text-shadow: 2px 2px 2px black;
-    color: whitesmoke;
-    font-size: 1.25rem;
+#carouselEpuyen{
+    .epuyenTitulo{
+        font-size: 2rem;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        letter-spacing: 1px;
+    }
+    .epuyenTexto{
+        font-size: 1.2rem;
+        color: white;
+        text-shadow: 1.5px 1.5px 2px black;
+    }
 }
 
 .textoYMapa {
@@ -182,7 +205,9 @@
 }
 
 @media only screen and (max-width:800px) {
-    .textoYMapa h2{
-        font-size: 1.44rem;
+    .textoYMapa {
+        h2{
+            font-size: 1.44rem;
+        }
     }
 }

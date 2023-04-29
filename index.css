@@ -288,8 +288,8 @@ footer {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
-  color: rgba(5, 65, 28, 0.986);
-  background-color: rgba(255, 255, 255, 0.507);
+  color: rgba(3, 39, 17, 0.986);
+  background-color: rgba(255, 255, 255, 0.664);
   border-radius: 20%;
   transition: all 0.5s;
   display: flex;
@@ -432,6 +432,13 @@ footer {
   background-color: rgba(255, 255, 255, 0.507);
   text-align: center;
 }
+.barra1 h1, .barra2 h1, .barra3 h1 {
+  color: rgba(3, 39, 17, 0.986);
+  padding: 12px;
+  font-size: 1.9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
 .barra1 h2, .barra2 h2, .barra3 h2 {
   color: rgba(3, 39, 17, 0.986);
   padding: 12px;
@@ -524,11 +531,16 @@ footer {
     height: 300px;
   }
 }
-.mainEpuyen .epuyenTitulo,
-.epuyenTexto {
+#carouselEpuyen .epuyenTitulo {
+  font-size: 2rem;
+  color: white;
   text-shadow: 2px 2px 2px black;
-  color: whitesmoke;
-  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+#carouselEpuyen .epuyenTexto {
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1.5px 1.5px 2px black;
 }
 
 .textoYMapa {
@@ -584,7 +596,7 @@ footer {
 .mainSobreNosotros {
   height: 100%;
   width: 100%;
-  background-color: rgba(12, 177, 61, 0.637);
+  background-color: rgba(9, 102, 37, 0.342);
 }
 .mainSobreNosotros h1 {
   font-size: 3.12rem;
@@ -642,10 +654,12 @@ fieldset {
 }
 legend {
   font-size: 2rem;
+  color: black;
 }
 
 .alquiler {
   text-align: center;
+  color: black;
 }
 .alquiler p {
   color: black;
@@ -666,11 +680,11 @@ legend {
   filter: grayscale(70%);
 }
 .parte2 .card .card_img {
-  height: 180px;
+  height: 350px;
   background-position: center;
   background-size: cover;
 }
-.parte2 .card .card_desc h4 {
+.parte2 .card .card_desc h3 {
   letter-spacing: 0.2px;
   padding-top: 4px;
   text-align: center;
@@ -745,6 +759,7 @@ legend {
 }
 .parte3 h2 {
   font-size: 2rem;
+  color: black;
 }
 .parte3 p {
   color: black;
@@ -790,7 +805,7 @@ legend {
   color: rgba(3, 39, 17, 0.986);
   letter-spacing: 1px;
 }
-.mainContacto .contact_form .formulario h3 {
+.mainContacto .contact_form .formulario h2 {
   font-size: 1.1rem;
   padding-bottom: 30px;
   color: #0e0e0e;
@@ -891,7 +906,7 @@ legend {
   .mainContacto .contact_form .formulario h1 {
     font-size: 4rem;
   }
-  .mainContacto .contact_form .formulario h3 {
+  .mainContacto .contact_form .formulario h2 {
     font-size: 1.5rem;
   }
   .mainContacto .contact_form .formulario p {
