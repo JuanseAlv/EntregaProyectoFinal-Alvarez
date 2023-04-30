@@ -26,10 +26,6 @@
         display: flex;
         justify-content: center;
     }
-    p {
-        font-size: 1.3rem;
-        color: black;
-    }
 }
 
 @media only screen and (max-width:450px) {
@@ -55,6 +51,9 @@ fieldset {
     margin: 0 auto;
     width: 100%;
     padding: 10px;
+    font-size: 2rem;
+    font-family: dongle;
+    color: black;
 }
 @media only screen and (min-width:800px) {
     fieldset{
@@ -63,17 +62,23 @@ fieldset {
 }
 
 legend {
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: $color3;
 }
 
 .alquiler{
     text-align: center;
     color: $color3;
+    
     p{
         color: $color3;
-        font-size: 1.3rem;
+        font-size: 2rem;
+        font-family: dongle;
         padding: 15px;
+    }
+    h2{
+        font-size: 3.5rem;
+        font-family: dongle;
     }
 }
 .parte2 {
@@ -125,18 +130,17 @@ legend {
         }
     }
     .card2{
-        background-color: rgba(0, 0, 255, 0.37);
+        background-color: rgba(255, 255, 0, 0.658);
         .card_img{
             background-image: url(img/alquiler2.jpg);
         }
     }
     .card3{
-        background-color: rgba(137, 43, 226, 0.486);
+        background-color: rgba(245, 42, 42, 0.548);
         .card_img{
             background-image: url(img/alquiler3.jpg);
         }
     }
-    
 }
 @media only screen and (min-width:900px) {
     .card{
@@ -153,13 +157,13 @@ legend {
         width: 600px;
     }
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:750px) {
     .parte2{
         flex-direction: column;
         align-items: center;
         .card{
             width: 70%;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .card_img{
             height: 250px;
@@ -170,13 +174,16 @@ legend {
 .parte3 {
     text-align: center;
     h2 {
-        font-size: 2rem;
+        font-size: 3.5rem;
+        font-family: dongle;
         color: $color3;
+
     }
     p {
         color: $color3;
         margin: 0 auto;
-        font-size: 1.3rem;
+        font-size: 2rem;
+        font-family: dongle;
         padding: 15px;
     }
     img {

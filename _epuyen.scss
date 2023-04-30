@@ -8,19 +8,7 @@
     div {
         text-align: center;
     }
-    article {
-        margin: 0 auto;
-        width: 70%;
-        height: 500px;
-        padding: 35px;
-        border: 1px solid black;
-        background-color: rgba(0, 0, 0, 0.445);
-    }
-        img {
-            margin: 0 auto;
-            width: 60%;
-            height: 430px;
-        }
+    
     iframe {
         width: 100%;
         height: 300px;
@@ -29,8 +17,10 @@
 .barra1, .barra2, .barra3{
     width: 100%;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.507);
+    background-color: $color2;
     text-align: center;
+    box-shadow: inset 0 0 10px 1px $color1;
+
     h1{
         color: rgba(3, 39, 17, 0.986);
         padding: 12px;
@@ -72,7 +62,7 @@
     .imagenEpuyen{
         background-image: url(img/fotoEpuyen.jpg);
         width: 100%;
-        height: 330px;
+        height: 400px;
         background-position: center;
         background-size: cover;
     }
@@ -84,13 +74,14 @@
         h2 {
             color: black;
             background-color: rgba(0, 100, 0, 0.534);
-            padding: 7px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 1px;
+            font-size: 3.5rem;
+            font-family: dongle;
         }
         p {
             padding: 7px;
-            font-size: 1.1rem;
-            font-style: italic;
+            font-size: 2rem;
+            font-family: dongle;
             color: black;
             background-color: rgba(50, 205, 50, 0.418);
         }
@@ -106,7 +97,7 @@
 @media only screen and (max-width:800px) {
     .descEpuyen {
         h2{
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         }
     }
 }
@@ -115,7 +106,7 @@
     .parteArriba {
         .descEpuyen {
             p{
-                font-size: 1.56rem;
+                font-size: 2rem;
                 padding: 6px;
             }
         }
@@ -124,7 +115,7 @@
 
 @media only screen and (max-width: 750px) {
     .mainEpuyen {
-        article {
+        #carouselEpuyen {
             height: 400px;
             img {
                 height: 330px;
@@ -135,7 +126,7 @@
 
 @media only screen and (max-width: 550px) {
     .mainEpuyen {
-        article {
+        #carouselEpuyen {
             width: 100%;
             height: 370px;
             img {
@@ -147,6 +138,20 @@
 }
 
 #carouselEpuyen{
+    margin: 0 auto;
+    width: 70%;
+    height: 500px;
+    padding: 35px;
+    box-shadow: inset 0 0 10px 2px rgba(0, 100, 0, 0.623);
+    background-color: $color2;
+    border-radius: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    img {
+        margin: 0 auto;
+        width: 60%;
+        height: 430px;
+    }
     .epuyenTitulo{
         font-size: 2rem;
         color: white;
@@ -168,15 +173,16 @@
     h2 {
         color: black;
         background-color: rgba(0, 100, 0, 0.534);
-        padding: 7px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 1px;
+        font-size: 3.5rem;
+        font-family: dongle;
     }
     p {
         padding: 10px;
-        font-size: 1.56rem;
+        font-size: 2rem;
+        font-family: dongle;
         color: black;
         background-color: rgba(50, 205, 50, 0.171);
-        font-family: italic;
     }
 }
 @media only screen and (max-width:720px) {
@@ -207,7 +213,7 @@
 @media only screen and (max-width:800px) {
     .textoYMapa {
         h2{
-            font-size: 1.44rem;
+            font-size: 3.5rem;
         }
     }
 }

@@ -60,6 +60,11 @@ html {
         font-size: 27px;
         color: $color4;
         text-align: center;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-delay: 2.5s;
     }
 }
 .iniciar {
@@ -72,7 +77,7 @@ html {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 2s;
-    animation-delay: 5s;
+    animation-delay: 4.5s;
 }
 @media only screen and (max-width: 600px) {
     .iniciar {
@@ -144,6 +149,8 @@ html {
 
 
 ////////////////// Diseño General ///////////////
+
+
 .headerGeneral {
     margin: 0;
     padding: 0;
