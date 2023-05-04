@@ -423,26 +423,22 @@ footer {
   height: 60px;
   background-color: rgba(255, 255, 255, 0.664);
   text-align: center;
-  box-shadow: inset 0 0 10px 1px rgba(3, 39, 17, 0.986);
+  box-shadow: inset 0 0 12px 15px rgba(255, 255, 255, 0.664);
 }
-.barra1 h1, .barra2 h1, .barra3 h1 {
+.barra1 .propTitulos, .barra1 h2, .barra2 .propTitulos, .barra2 h2, .barra3 .propTitulos, .barra3 h2 {
   color: rgba(3, 39, 17, 0.986);
   padding: 12px;
   font-size: 1.9rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
 }
-.barra1 h2, .barra2 h2, .barra3 h2 {
-  color: rgba(3, 39, 17, 0.986);
-  padding: 12px;
-  font-size: 1.9rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 2px;
-}
-
 @media only screen and (max-width: 455px) {
   .barra1, .barra2, .barra3 {
     height: 45px;
+  }
+  .barra1 .propTitulos, .barra1 h2, .barra2 .propTitulos, .barra2 h2, .barra3 .propTitulos, .barra3 h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
   }
   .barra1 h2, .barra2 h2, .barra3 h2 {
     font-size: 1.5rem;
@@ -452,6 +448,10 @@ footer {
 @media only screen and (max-width: 330px) {
   .barra1, .barra2, .barra3 {
     height: 40px;
+  }
+  .barra1 .propTitulos, .barra1 h2, .barra2 .propTitulos, .barra2 h2, .barra3 .propTitulos, .barra3 h2 {
+    font-size: 1.2rem;
+    letter-spacing: 0px;
   }
   .barra1 h2, .barra2 h2, .barra3 h2 {
     font-size: 1.2rem;
@@ -466,7 +466,7 @@ footer {
 .parteArriba .imagenEpuyen {
   background-image: url(img/fotoEpuyen.jpg);
   width: 100%;
-  height: 400px;
+  height: 415px;
   background-position: center;
   background-size: cover;
 }
@@ -481,6 +481,7 @@ footer {
   padding: 1px;
   font-size: 3.5rem;
   font-family: dongle;
+  border-radius: 15px;
 }
 .parteArriba p {
   padding: 7px;
@@ -488,6 +489,7 @@ footer {
   font-family: dongle;
   color: black;
   background-color: rgba(50, 205, 50, 0.418);
+  border-radius: 15px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -530,7 +532,7 @@ footer {
   width: 70%;
   height: 500px;
   padding: 35px;
-  box-shadow: inset 0 0 10px 2px rgba(0, 100, 0, 0.623);
+  box-shadow: inset 0 0 12px 15px rgba(255, 255, 255, 0.664);
   background-color: rgba(255, 255, 255, 0.664);
   border-radius: 12px;
   margin-top: 12px;
@@ -565,6 +567,7 @@ footer {
   padding: 1px;
   font-size: 3.5rem;
   font-family: dongle;
+  border-radius: 15px;
 }
 .textoYMapa p {
   padding: 10px;
@@ -572,6 +575,7 @@ footer {
   font-family: dongle;
   color: black;
   background-color: rgba(50, 205, 50, 0.171);
+  border-radius: 15px;
 }
 
 @media only screen and (max-width: 720px) {
