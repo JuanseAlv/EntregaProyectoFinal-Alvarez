@@ -669,6 +669,17 @@ fieldset {
   fieldset {
     width: 700px;
   }
+  .mainSobreNosotros .alquiler p {
+    width: 700px;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .mainSobreNosotros .alquiler h2 {
+    width: 400px;
+  }
+  .mainSobreNosotros .parte3 h2 {
+    width: 400px;
+  }
 }
 legend {
   font-size: 3.5rem;
@@ -681,19 +692,21 @@ legend {
 .alquiler {
   text-align: center;
   color: rgba(3, 39, 17, 0.986);
+  padding: 10px;
 }
 .alquiler p {
   color: black;
   font-size: 2rem;
   font-family: dongle;
   padding: 15px;
+  width: 100%;
 }
 .alquiler h2 {
   font-size: 3.5rem;
   font-family: dongle;
   background-color: rgba(255, 255, 255, 0.664);
   border-radius: 30px;
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -788,6 +801,7 @@ legend {
 }
 .parte3 {
   text-align: center;
+  padding: 10px;
 }
 .parte3 h2 {
   font-size: 3.5rem;
@@ -795,7 +809,7 @@ legend {
   color: rgba(3, 39, 17, 0.986);
   background-color: rgba(255, 255, 255, 0.664);
   border-radius: 30px;
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 .parte3 p {

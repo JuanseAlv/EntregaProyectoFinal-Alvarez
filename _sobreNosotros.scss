@@ -60,14 +60,27 @@ fieldset {
     fieldset{
         width: 700px;
     }
-    .alquiler{
-        h2{
-            width: 700px;
-        }
-        p{
-            width: 700px;
+    .mainSobreNosotros{
+        .alquiler{
+            p{
+                width: 700px;
+            }
         }
     }
+}
+@media only screen and (min-width:420px) {
+    .mainSobreNosotros{
+        .alquiler{
+            h2{
+                width: 400px;
+            }
+        }
+        .parte3{
+            h2{
+                width: 400px;
+            }
+        }
+    }         
 }
 
 legend {
@@ -81,6 +94,7 @@ legend {
 .alquiler{
     text-align: center;
     color: $color1;
+    padding: 10px;
     p{
         color: $color3;
         font-size: 2rem;
@@ -191,13 +205,14 @@ legend {
 
 .parte3 {
     text-align: center;
+    padding: 10px;
     h2 {
         font-size: 3.5rem;
         font-family: dongle;
         color: $color1;
         background-color: $color2;
         border-radius: 30px;
-        width: 400px;
+        width: 100%;
         margin: 0 auto;
     }
     p {
