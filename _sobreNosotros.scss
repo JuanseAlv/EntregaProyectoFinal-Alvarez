@@ -60,6 +60,14 @@ fieldset {
     fieldset{
         width: 700px;
     }
+    .alquiler{
+        h2{
+            width: 700px;
+        }
+        p{
+            width: 700px;
+        }
+    }
 }
 
 legend {
@@ -78,13 +86,14 @@ legend {
         font-size: 2rem;
         font-family: dongle;
         padding: 15px;
+        width: 100%;
     }
     h2{
         font-size: 3.5rem;
         font-family: dongle;
         background-color: $color2;
         border-radius: 30px;
-        width: 400px;
+        width: 100%;
         margin: 0 auto;
     }
 }
