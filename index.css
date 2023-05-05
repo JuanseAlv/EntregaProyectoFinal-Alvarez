@@ -589,13 +589,16 @@ footer {
   width: 100%;
   padding: 17px;
 }
+.parteAbajo iframe {
+  border-radius: 15px;
+}
 .parteAbajo a {
   color: rgba(3, 39, 17, 0.986);
   background-color: rgba(255, 255, 255, 0.774);
   padding: 5px;
   text-decoration: none;
   font-size: 1.25rem;
-  border-radius: 20%;
+  border-radius: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .parteAbajo a:hover {
@@ -618,6 +621,7 @@ footer {
   word-spacing: 15px;
   letter-spacing: 7px;
   margin-bottom: 60px;
+  margin-top: 20px;
 }
 .mainSobreNosotros .puerto::first-letter {
   color: darkgreen;
@@ -668,12 +672,15 @@ fieldset {
 }
 legend {
   font-size: 3.5rem;
-  color: black;
+  color: rgba(3, 39, 17, 0.986);
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 30px;
+  width: 400px;
 }
 
 .alquiler {
   text-align: center;
-  color: black;
+  color: rgba(3, 39, 17, 0.986);
 }
 .alquiler p {
   color: black;
@@ -684,6 +691,10 @@ legend {
 .alquiler h2 {
   font-size: 3.5rem;
   font-family: dongle;
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 30px;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .parte2 {
@@ -697,11 +708,13 @@ legend {
   border: 3px solid black;
   box-shadow: 2px 2px 5px black;
   filter: grayscale(70%);
+  border-radius: 10px;
 }
 .parte2 .card .card_img {
   height: 350px;
   background-position: center;
   background-size: cover;
+  border-radius: 10px;
 }
 .parte2 .card .card_desc h3 {
   letter-spacing: 0.2px;
@@ -714,8 +727,8 @@ legend {
 }
 .parte2 .card .card_desc p {
   padding: 15px;
-  font-family: cursive;
-  font-size: 1.1rem;
+  font-family: dongle;
+  font-size: 1.75rem;
   color: black;
   text-align: center;
   text-shadow: 0.2px 0.2px 0px black;
@@ -753,7 +766,7 @@ legend {
     justify-content: space-around;
   }
   .alquiler {
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
   }
   .parte3 p {
@@ -779,7 +792,11 @@ legend {
 .parte3 h2 {
   font-size: 3.5rem;
   font-family: dongle;
-  color: black;
+  color: rgba(3, 39, 17, 0.986);
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 30px;
+  width: 400px;
+  margin: 0 auto;
 }
 .parte3 p {
   color: black;
