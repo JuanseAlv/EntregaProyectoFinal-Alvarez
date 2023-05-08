@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Patagonia, cordillera, bosque, ruta 40, Chubut, mapa">
-    <meta name="description" content="Encontranos en la cordillera sobre la Ruta Nacional 40 rodeados de montañas, árboles y aguas cristalinas">
+    <meta name="description"
+        content="Encontranos en la cordillera sobre la Ruta Nacional 40 rodeados de montañas, árboles y aguas cristalinas">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
     <link rel="shortcut icon" href="../img/logoNuevo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -25,16 +27,16 @@
                 <img src="../img/logoNuevo.png" alt="">
             </a>
             <div class="switch-button ">
-            
-                <input type="checkbox" name="switch-button" id="switch-label" data-toggle="collapse"  data-target="#navbarNav" class="switch-button__checkbox ">
-                
+
+                <input type="checkbox" name="switch-button" id="switch-label" data-toggle="collapse"
+                    data-target="#navbarNav" class="switch-button__checkbox ">
+
                 <label for="switch-label" class="switch-button__label"></label>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a  
-                        href="./epuyen.html">Epuyén</a>
+                        <a href="./epuyen.html">Epuyén</a>
                     </li>
                     <li class="nav-item">
                         <a href="./sobreNosotros.html">Nosotros</a>
@@ -46,22 +48,25 @@
             </div>
         </nav>
     </header>
-    
+
     <main class="mainEpuyen">
         <div class="barra1">
             <h1 class="propTitulos"><strong>Epuyén, Distrito Federal</strong></h1>
         </div>
-        <section class="parteArriba">
-            <div class="imagenEpuyen"></div>
-            <div class="descEpuyen">
+        <section class="parteArriba"  >
+            <div data-aos="fade-right" class="imagenEpuyen fade-right"></div>
+            <div data-aos="fade-left" class="descEpuyen fade-left">
                 <h2>Sobre la ruta 40</h2>
-                <p>Epuyén es una hermosa localidad ubicada en la Patagonia argentina. Rodeada por frondosos bosques de cipreses y coihues, cuenta con una exuberante vegetación y un clima fresco y húmedo. Su ambiente tranquilo y apacible, junto con su belleza natural, hacen de Epuyén un destino ideal para aquellos que buscan relajarse y disfrutar de la naturaleza.</p>
+                <p>Epuyén es una hermosa localidad ubicada en la Patagonia argentina. Rodeada por frondosos bosques de
+                    cipreses y coihues, cuenta con una exuberante vegetación y un clima fresco y húmedo. Su ambiente
+                    tranquilo y apacible, junto con su belleza natural, hacen de Epuyén un destino ideal para aquellos
+                    que buscan relajarse y disfrutar de la naturaleza.</p>
             </div>
         </section>
         <div class="barra2">
             <h2><strong>Vení, te estamos esperando!</strong></h2>
         </div>
-        <article>
+        <article data-aos="flip-up" class="flip-up">
             <div id="carouselEpuyen" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselEpuyen" data-slide-to="0" class="active"></li>
@@ -115,21 +120,22 @@
             </div>
             <section class="textoYMapa">
                 <div class="parteAbajo">
-                    <h2>Dos que Van</h2>
-                    <p>La localidad de Epuyén fue fundada el 1º de septiembre de 1908. El nombre de Epuyén significa
+                    <div data-aos="fade-right" class="fade-right">
+                        <h2>Dos que Van</h2>
+                        <p>La localidad de Epuyén fue fundada el 1º de septiembre de 1908. El nombre de Epuyén significa
                         “Dos que
                         van” debido a los dos arroyos que recorren la localidad para desembocar en el río Epuyén, nacido
                         del
                         lago de mismo nombre.</p>
-                    <a href="https://www.epuyenpatagonia.com.ar/" target="_blank">Mas Info</a>
+                    <a href="https://www.epuyenpatagonia.com.ar/" target="_blank">Mas Info</a></div>
                 </div>
 
                 <div class="parteAbajo">
-                    <h2>Cómo Llegar</h2>
+                    <div data-aos="fade-left" class="fade-left"><h2>Cómo Llegar</h2>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11816.914540520484!2d-71.36350184999999!3d-42.2309282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961b87d8d8391ad7%3A0xff6964d741c7b3b6!2zRXB1ecOpbiwgQ2h1YnV0!5e0!3m2!1ses-419!2sar!4v1679955900107!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </section>
         </div>
@@ -139,10 +145,12 @@
         <section>
             <ul class="contactoSocial">
                 <li>
-                    <a href="https://www.instagram.com/kayak.puertobonitoepuyen/" class="fa-brands fa-instagram ig" target="_blank"></a>
+                    <a href="https://www.instagram.com/kayak.puertobonitoepuyen/" class="fa-brands fa-instagram ig"
+                        target="_blank"></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/KayakPuertoBonito/" class="fa-brands fa-facebook fb" target="_blank"></a>
+                    <a href="https://www.facebook.com/KayakPuertoBonito/" class="fa-brands fa-facebook fb"
+                        target="_blank"></a>
                 </li>
                 <li>
                     <a href="https://web.whatsapp.com/" class="fa-brands
@@ -178,6 +186,10 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
