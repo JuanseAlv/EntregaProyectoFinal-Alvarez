@@ -799,6 +799,19 @@ legend {
     height: 250px;
   }
 }
+@media only screen and (max-width: 415px) {
+  .parte2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .parte2 .card {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .parte2 .card_img {
+    height: 250px;
+  }
+}
 .parte3 {
   text-align: center;
   padding: 10px;

@@ -202,6 +202,19 @@ legend {
         }
     }
 }
+@media only screen and (max-width:415px) {
+    .parte2{
+        flex-direction: column;
+        align-items: center;
+        .card{
+            width: 95%;
+            margin-bottom: 30px;
+        }
+        .card_img{
+            height: 250px;
+        }
+    }
+}
 
 .parte3 {
     text-align: center;
