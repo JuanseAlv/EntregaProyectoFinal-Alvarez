@@ -967,7 +967,7 @@ legend {
 
 @media only screen and (max-width: 600px) {
   .mainContacto .contact_form {
-    width: 100%;
+    width: 97%;
   }
   .mainContacto .contact_form .formulario h1 {
     font-size: 4rem;
