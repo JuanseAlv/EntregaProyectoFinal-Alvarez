@@ -219,6 +219,14 @@ legend {
 .parte3 {
     text-align: center;
     padding: 10px;
+    a{
+        text-decoration: none;
+        :hover{
+            transform: scale(1.09);
+            transition: all 0.2s;
+        }
+    }
+    
     h2 {
         font-size: 3.5rem;
         font-family: dongle;

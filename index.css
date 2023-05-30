@@ -295,7 +295,7 @@ footer {
   font-size: 1.25rem;
   text-decoration: none;
   color: rgba(3, 39, 17, 0.986);
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(255, 255, 255, 0.662745098);
   border-radius: 20%;
   transition: all 0.5s;
   display: flex;
@@ -379,7 +379,7 @@ footer {
   padding: 7px;
   height: auto;
   width: 60%;
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(255, 255, 255, 0.662745098);
   border-radius: 12px;
   color: rgba(3, 39, 17, 0.986);
   font-family: dongle;
@@ -422,9 +422,9 @@ footer {
 .barra1, .barra2, .barra3 {
   width: 100%;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(255, 255, 255, 0.662745098);
   text-align: center;
-  box-shadow: inset 0 0 12px 15px rgba(255, 255, 255, 0.664);
+  box-shadow: inset 0 0 12px 15px rgba(255, 255, 255, 0.662745098);
 }
 .barra1 .propTitulos, .barra1 h2, .barra2 .propTitulos, .barra2 h2, .barra3 .propTitulos, .barra3 h2 {
   color: rgba(3, 39, 17, 0.986);
@@ -533,8 +533,8 @@ footer {
   width: 70%;
   height: 500px;
   padding: 35px;
-  box-shadow: inset 0 0 12px 15px rgba(255, 255, 255, 0.664);
-  background-color: rgba(255, 255, 255, 0.664);
+  box-shadow: inset 0 0 12px 15px rgba(255, 255, 255, 0.662745098);
+  background-color: rgba(255, 255, 255, 0.662745098);
   border-radius: 12px;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -543,6 +543,8 @@ footer {
   margin: 0 auto;
   width: 60%;
   height: 430px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #carouselEpuyen .epuyenTitulo {
   font-size: 2rem;
@@ -685,7 +687,7 @@ fieldset {
 legend {
   font-size: 3.5rem;
   color: rgba(3, 39, 17, 0.986);
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(255, 255, 255, 0.662745098);
   border-radius: 30px;
   width: 400px;
 }
@@ -705,7 +707,7 @@ legend {
 .alquiler h2 {
   font-size: 3.5rem;
   font-family: dongle;
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(255, 255, 255, 0.662745098);
   border-radius: 30px;
   width: 100%;
   margin: 0 auto;
@@ -817,11 +819,18 @@ legend {
   text-align: center;
   padding: 10px;
 }
+.parte3 a {
+  text-decoration: none;
+}
+.parte3 a :hover {
+  transform: scale(1.09);
+  transition: all 0.2s;
+}
 .parte3 h2 {
   font-size: 3.5rem;
   font-family: dongle;
   color: rgba(3, 39, 17, 0.986);
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(255, 255, 255, 0.662745098);
   border-radius: 30px;
   width: 100%;
   margin: 0 auto;
@@ -860,7 +869,7 @@ legend {
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(255, 255, 255, 0.662745098);
   box-shadow: 5px 5px 5px rgba(3, 39, 17, 0.986);
 }
 .mainContacto .contact_form .formulario h1 {
@@ -993,4 +1002,104 @@ legend {
   .mainContacto .contact_form .formulario .asunto {
     width: 70%;
   }
+}
+.tituloExcursiones {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.662745098);
+  text-align: center;
+  box-shadow: inset 0 0 12px 15px rgba(255, 255, 255, 0.662745098);
+  margin-bottom: 40px;
+}
+.tituloExcursiones strong {
+  color: rgba(3, 39, 17, 0.986);
+  font-size: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+.excursiones .excursion1y2 {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.excursiones .excursion1y2 .excursion1 {
+  height: auto;
+  width: 42%;
+}
+.excursiones .excursion1y2 .excursion1 .imgExc1 .carousel-item {
+  height: 400px;
+  width: 100%;
+  background-color: coral;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.excursiones .excursion1y2 .excursion1 .imgExc1 .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 15px;
+}
+.excursiones .excursion1y2 .excursion1 .textoExc1 {
+  padding: 10px;
+  font-family: dongle;
+  font-size: 2rem;
+  width: 100%;
+  height: 250px;
+  background-color: aqua;
+  color: black;
+  border-radius: 15px;
+}
+.excursiones .excursion1y2 .excursion2 {
+  height: auto;
+  width: 42%;
+}
+.excursiones .excursion1y2 .excursion2 .imgExc2 .carousel-item {
+  height: 400px;
+  width: 100%;
+  border: 1px 1px 1px black;
+  background-color: coral;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.excursiones .excursion1y2 .excursion2 .imgExc2 .carousel-item img {
+  padding-top: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.excursiones .excursion1y2 .excursion2 .textoExc2 {
+  border-radius: 15px;
+  padding: 10px;
+  font-family: dongle;
+  font-size: 2rem;
+  width: 100%;
+  height: 250px;
+  background-color: aqua;
+  color: black;
+}
+.excursiones .excursion3 {
+  height: auto;
+  width: 92%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.excursiones .excursion3 .imgExc3 {
+  height: 400px;
+  width: 100%;
+  background-color: coral;
+  border-radius: 15px;
+}
+.excursiones .excursion3 .textoExc3 {
+  padding: 10px;
+  font-family: dongle;
+  font-size: 2rem;
+  width: 100%;
+  height: 250px;
+  background-color: aqua;
+  color: black;
+  border-radius: 15px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,111 @@
+.tituloExcursiones {
+    width: 100%;
+    height: 60px;
+    background-color: $color2;
+    text-align: center;
+    box-shadow: inset 0 0 12px 15px $color2;
+    margin-bottom: 40px;
+
+    strong {
+        color: rgba(3, 39, 17, 0.986);
+        font-size: 2.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+    }
+}
+
+.excursiones {
+    .excursion1y2 {
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+        margin-bottom: 40px;
+        .excursion1 {
+            height: auto;
+            width: 42%;
+
+            .imgExc1 {
+                .carousel-item{
+                    height: 400px;
+                    width: 100%;
+                    background-color: coral;
+                    border-radius: 15px;
+                    object-fit: cover;
+                        img{
+                            object-fit: cover;
+                            padding-top: 15px;
+                        }
+                }
+            }
+
+            .textoExc1 {
+                padding: 10px;
+                font-family: dongle;
+                font-size: 2rem;
+                width: 100%;
+                height: 250px;
+                background-color: aqua;
+                color: black;
+                border-radius: 15px;
+            }
+        }
+
+        .excursion2 {
+            height: auto;
+            width: 42%;
+
+            .imgExc2 {
+                .carousel-item{
+                    height: 400px;
+                    width: 100%;
+                    border: 1px 1px 1px black;
+                    background-color: coral;
+                    border-radius: 15px;
+                    object-fit: cover;
+                        img{
+                            padding-top: 15px;
+                            object-fit: cover;
+                        }
+                }
+            }
+
+            .textoExc2 {
+                border-radius: 15px;
+                padding: 10px;
+                font-family: dongle;
+                font-size: 2rem;
+                width: 100%;
+                height: 250px;
+                background-color: aqua;
+                color: black;
+            }
+        }
+    }
+
+    .excursion3 {
+        height: auto;
+        width: 92%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        
+        .imgExc3 {
+            height: 400px;
+            width: 100%;
+            background-color: coral;
+            border-radius: 15px;
+        }
+
+        .textoExc3 {
+            padding: 10px;
+            font-family: dongle;
+            font-size: 2rem;
+            width: 100%;
+            height: 250px;
+            background-color: aqua;
+            color: black;
+            border-radius: 15px;
+        }
+    }
+}
